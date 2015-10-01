@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <title>Fit to a Tee Style Guide</title>
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Hind:400,600' rel='stylesheet' type='text/css'>    
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="wrapper"> <!-- // DIV that wraps around the whole document -->
+
+      <h1>Fit to a Tee Style Guide</h1>
+      <p class="author">Brendan Lane</p>
+
+      <p>Welcome to the <em>Fit to a Tee</em> style guide. This guide is a resource for maintaining a consistent design language and coding convention around Fit to a Tee's UI. It's used for storing and maintaining a living database of modular UI elements that make up our site, so that compliancy and consistency can be found across Fit to a Tee's site.</p>
+
+      <!-- // NAVIGATION -->
+      <nav>
+        <a class="button navlink" href="#other_pages">Other Pages</a><a class="button navlink" href="#interactive_elements">Interactive Elements</a><a class="button navlink" href="#text_elements">Text Elements</a><a class="button navlink" href="#combined_elements">Combined Elements</a>
+      </nav>
+      <!-- // NAVIGATION -->
+
+      <!-- INTERACTIVE ELEMENTS SECTION // -->
+      <section id="interactive_elements">
+
+        <h2 class="subheading">Interactive Elements</h2>
+
+        <!-- Navigation and Checkout Button Styling Section -->
+        <section>
+          <h3>Navigation and Checkout Button</h3>
+            <h4>CSS selector:</h4>
+            <p>.button.navlink<br/>
+              .button.navlink.checkout</p>
+
+            <h4>Sample code:</h4>
+            <code>&lt;a class="button navlink" href=""&gt;Navigation Button&lt;/a&gt;<br/>
+              &lt;a class="button navlink checkout" href=""&gt;Checkout Button&lt;/a&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <a class="button navlink" href="">Navigation Button</a><a class="button navlink checkout" href="">Checkout Button</a>
+        </section>
+
+        <!-- In-Text Link Styling Section -->
+        <section>
+          <h3>In-text link</h3>
+            <h4>CSS selector:</h4>
+            <p>a</p>
+
+            <h4>Sample code:</h4>
+            <code>&lt;a href=""&gt;This is a link.&lt;/a&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <a href="">This is a link.</a>
+        </section>
+
+        <!-- Submit and Reset Button Styling Section -->
+        <section>
+          <h3>Submit and Reset Buttons</h3>
+            <h4>CSS selector:</h4>
+            <p>.button.submit<br/>
+              .button.reset</p>
+
+            <h4>Sample code:</h4>
+            <code>&lt;input type="submit" class="button submit" value="Submit form"&gt;<br/>
+            &lt;input type="submit" class="button reset" value="Clear all"&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <input type="submit" class="button submit" value="Submit form">
+            <input type="reset" class="button reset" value="Clear all">
+        </section>
+
+        <!-- Text Input Label and Field Styling Section -->
+        <section>
+          <h3>Text Input Label and Field</h3>
+            <h4>CSS selector:</h4>
+            <p>.textfield-label<br/>
+              .textfield</p>
+
+            <h4>Sample code:</h4>
+            <code>&lt;label class="textfield-label" for="text-input-field"&gt;Name&lt;/label&gt;<br/>
+              &lt;input type="text" class="textfield" placeholder="Enter your name here" id="input-first-name"&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <label class="textfield-label" for="text-input-field">Name</label>
+            <input type="text" class="textfield" placeholder="Enter your name here" id="input-first-name">
+        </section>
+
+      </section>
+      <!-- // INTERACTIVE ELEMENTS SECTION -->
+
+
+
+      <!-- TEXT ELEMENTS SECTION // -->
+      <section id="text_elements">
+
+        <h2 class="subheading">Text Elements</h2>
+
+        <!-- Headings Styling Section -->
+        <section>
+          <h3>Headings</h3>
+            <h4>CSS selectors:</h4>
+            <p>h1<br/>
+              h2<br/>
+              h3<br/>
+              h4</p>
+
+            <h4>Sample code:</h4>
+            <code>&lt;h1&gt;This is an h1 heading.&lt;/h1&gt;</code>
+            <code>&lt;h2&gt;This is an h2 heading.&lt;/h2&gt;</code>
+            <code>&lt;h3&gt;This is an h3 heading.&lt;/h3&gt;</code>
+            <code>&lt;h4&gt;This is an h4 heading.&lt;/h4&gt;</code>
+
+            <h4>Rendered elements:</h4>
+            <h1>This is an h1 heading.</h1>
+            <h2>This is an h2 heading.</h2>
+            <h3>This is an h3 heading.</h3>
+            <h4>This is an h4 heading.</h4>
+        </section>
+
+        <!-- Paragraph Styling Section -->
+        <section>
+          <h3>Paragraph</h3>
+            <h4>CSS selector:</h4>
+            <p>p</p>
+
+            <h4>Sample code:</h4>
+            <code>&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.&lt;/p&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </section>
+
+        <!-- Unordered List Styling Section -->
+        <section>
+          <h3>Bulleted Lists</h3>
+            <h4>CSS selector:</h4>
+            <p>ul</p>
+
+            <h4>Sample code:</h4>
+            <code>&lt;ul&gt;<br/>
+              <span class="indent">&lt;li&gt;&lt;span class="listitem"&gt;This is a list item.&lt;span&gt;&lt;/li&gt;</span><br/>
+              <span class="indent">&lt;li&gt;&lt;span class="listitem"&gt;This is a list item.&lt;span&gt;&lt;/li&gt;</span><br/>
+              <span class="indent">&lt;li&gt;&lt;span class="listitem"&gt;This is a list item.&lt;span&gt;&lt;/li&gt;</span><br/>
+            &lt;/ul&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <ul>
+              <li><span class="listitem">This is a list item.</span></li>
+              <li><span class="listitem">This is a list item.</span></li>
+              <li><span class="listitem">This is a list item.</span></li>
+            </ul>
+
+            <h4>Note on code:</h4>
+            <p>The CSS for the &lt;ul&gt; tag colours the bullets, so the &lt;span&gt; tag with the "listitem" class exists to recolour the text back to grey.</p>
+        </section>
+
+        <!-- Ordered List Styling Section -->
+        <section>
+          <h3>Numbered Lists</h3>
+            <h4>CSS selectors:</h4>
+            <p>ol</p>
+
+            <h4>Sample code:</h4>
+            <code>&lt;ol&gt;<br/>
+              <span class="indent">&lt;li&gt;&lt;span class="listitem"&gt;This is a list item.&lt;span&gt;&lt;/li&gt;</span><br/>
+              <span class="indent">&lt;li&gt;&lt;span class="listitem"&gt;This is a list item.&lt;span&gt;&lt;/li&gt;</span><br/>
+              <span class="indent">&lt;li&gt;&lt;span class="listitem"&gt;This is a list item.&lt;span&gt;&lt;/li&gt;</span><br/>
+            &lt;/ol&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <ol>
+              <li><span class="listitem">This is a list item.</span></li>
+              <li><span class="listitem">This is a list item.</span></li>
+              <li><span class="listitem">This is a list item.</span></li>
+            </ol>
+
+            <h4>Note on code:</h4>
+            <p>The CSS for the &lt;ol&gt; tag colours the numbers, so the &lt;span&gt; tag with the "listitem" class exists to recolour the text back to grey.</p>
+        </section>
+
+      </section>
+      <!-- // TEXT ELEMENTS SECTION -->
+
+
+
+      <!-- COMBINED ELEMENTS SECTION // -->
+      <section id="combined_elements">
+
+        <h2 class="subheading">Combined Elements</h2>
+
+        <!-- Main Navigation Styling Section -->
+        <section>
+          <h3>Main Navigation</h3>
+
+            <h4>CSS selector:</h4>
+              <p>nav</p>
+
+            <h4>Sample code:</h4>
+            <code>&lt;nav&gt;<br/>
+              <span class="indent">&lt;a class="button navlink" href=""&gt;Current Styles&lt;/a&gt;</span><br/>
+              <span class="indent">&lt;a class="button navlink" href=""&gt;Past Styles&lt;/a&gt;</span><br/>
+              <span class="indent">&lt;a class="button navlink" href=""&gt;About&lt;/a&gt;</span><br/>
+              <span class="indent">&lt;a class="button navlink checkout" href=""&gt;Checkout&lt;/a&gt;</span><br/>
+            &lt;/nav&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <nav>
+              <a class="button navlink" href="">Current Styles</a><a class="button navlink" href="">Past Styles</a><a class="button navlink" href="">About</a><a class="button navlink checkout" href="">Checkout</a>
+            </nav>
+        </section>
+
+        <!-- Product Listing Styling Section -->
+        <section>
+          <h3>Product Listing</h3>
+
+            <h4>CSS selector:</h4>
+              <p>.product-listing</p>
+
+              <h4>Sample code:</h4>
+              <code>&lt;div class="product-listing"&gt;<br/>
+                <span class="indent">&lt;img src="img/tshirt-bike.png" alt="T-shirt with a bike on the front. The bike has people standing on its seat."&gt;</span><br/>
+                <span class="indent">&lt;div class="product-info"&gt;</span><br/>
+                <span class="indent-2">&lt;p class="product-name"&gt;Bike T-Shirt&lt;/p&gt;</span><br/>
+                <span class="indent-2">&lt;p class="product-price"&gt;$24.99&lt;/p&gt;</span><br/>
+                <span class="indent">&lt;/div&gt;</span><br/>
+                &lt;/div&gt;
+              </code>
+
+            <h4>Rendered element:</h4>
+            <div class="product-listing">
+              <img src="img/tshirt-bike.png" alt="T-shirt with a bike on the front. The bike has people standing on its seat.">
+              <div class="product-info">
+                <p class="product-name">Bike T-Shirt</p>
+                <p class="product-price">$24.99</p>
+              </div>
+            </div>
+        </section>
+
+        <!-- Grid Structure Styling Section -->
+        <section>
+          <h3>Grid Structure</h3>
+
+            <h4>CSS selector:</h4>
+              <p>.container</p>
+
+              <h4>Sample code:</h4>
+              <code>&lt;div class="container"&gt;<br/>
+                <span class="indent">&lt;div class="product-listing container-item"&gt;</span><br/>
+                  <span class="indent-2">&lt;img src="img/tshirt-bike.png" alt="T-shirt with a bike on the front. The bike has people standing on its seat."&gt;</span><br/>
+                  <span class="indent-2">&lt;div class="product-info"&gt;</span><br/>
+                    <span class="indent-3">&lt;p class="product-name"&gt;Bike T-Shirt&lt;/p&gt;</span><br/>
+                    <span class="indent-3">&lt;p class="product-price"&gt;$24.99&lt;/p&gt;</span><br/>
+                  <span class="indent-2">&lt;/div&gt;</span><br/>
+                <span class="indent">&lt;/div&gt;</span><br/>
+                <span class="indent">&lt;div class="product-listing container-item"&gt;</span><br/>
+                  <span class="indent-2">&lt;img src="img/tshirt-mountain.png" alt="T-shirt with two mountains on the front. The tall mountain is thinking about food."&gt;</span><br/>
+                  <span class="indent-2">&lt;div class="product-info"&gt;</span><br/>
+                    <span class="indent-3">&lt;p class="product-name"&gt;Mountain T-Shirt&lt;/p&gt;</span><br/>
+                    <span class="indent-3">&lt;p class="product-price"&gt;$24.99&lt;/p&gt;</span><br/>
+                  <span class="indent-2">&lt;/div&gt;</span><br/>
+                <span class="indent">&lt;/div&gt;</span><br/>
+                <span class="indent">&lt;div class="product-listing container-item"&gt;</span><br/>
+                  <span class="indent-2">&lt;img src="img/tshirt-picnic.png" alt="T-shirt with a picnic basket containing chicken, watermelon, and lemonade on the front."&gt;</span><br/>
+                  <span class="indent-2">&lt;div class="product-info"&gt;</span><br/>
+                    <span class="indent-3">&lt;p class="product-name"&gt;Picnic T-Shirt&lt;/p&gt;</span><br/>
+                    <span class="indent-3">&lt;p class="product-price"&gt;$24.99&lt;/p&gt;</span><br/>
+                  <span class="indent-2">&lt;/div&gt;</span><br/>
+                <span class="indent">&lt;/div&gt;</span><br/>
+                <span class="indent">&lt;div class="product-listing container-item"&gt;</span><br/>
+                  <span class="indent-2">&lt;img src="img/tshirt-trees.png" alt="T-shirt with walking trees on the front."&gt;</span><br/>
+                  <span class="indent-2">&lt;div class="product-info"&gt;</span><br/>
+                    <span class="indent-3">&lt;p class="product-name"&gt;Trees T-Shirt&lt;/p&gt;</span><br/>
+                    <span class="indent-3">&lt;p class="product-price"&gt;$24.99&lt;/p&gt;</span><br/>
+                  <span class="indent-2">&lt;/div&gt;</span><br/>
+                <span class="indent">&lt;/div&gt;</span><br/>
+                <span class="indent">&lt;div class="product-listing container-item"&gt;</span><br/>
+                  <span class="indent-2">&lt;img src="img/tshirt-ufo.png" alt="T-shirt with a UFO abducting a man on the front."&gt;</span><br/>
+                  <span class="indent-2">&lt;div class="product-info"&gt;</span><br/>
+                    <span class="indent-3">&lt;p class="product-name"&gt;UFO T-Shirt&lt;/p&gt;</span><br/>
+                    <span class="indent-3">&lt;p class="product-price"&gt;$24.99&lt;/p&gt;</span><br/>
+                  <span class="indent-2">&lt;/div&gt;</span><br/>
+                <span class="indent">&lt;/div&gt;</span><br/>
+                <span class="indent">&lt;div class="product-listing container-item"&gt;</span><br/>
+                  <span class="indent-2">&lt;img src="img/tshirt-falling.png" alt="T-shirt with two falling children on the front."&gt;</span><br/>
+                  <span class="indent-2">&lt;div class="product-info"&gt;</span><br/>
+                    <span class="indent-3">&lt;p class="product-name"&gt;Falling T-Shirt&lt;/p&gt;</span><br/>
+                    <span class="indent-3">&lt;p class="product-price"&gt;$29.99&lt;/p&gt;</span><br/>
+                  <span class="indent-2">&lt;/div&gt;</span><br/>
+                <span class="indent">&lt;/div&gt;</span><br/>
+              &lt;/div&gt;
+              </code>
+
+            <h4>Rendered element:</h4>
+            <div class="container">
+              <div class="product-listing container-item">
+                <img src="img/tshirt-bike.png" alt="T-shirt with a bike on the front. The bike has people standing on its seat.">
+                <div class="product-info">
+                  <p class="product-name">Bike T-Shirt</p>
+                  <p class="product-price">$24.99</p>
+                </div>
+              </div>
+              <div class="product-listing container-item">
+                <img src="img/tshirt-mountain.png" alt="T-shirt with two mountains on the front. The tall mountain is thinking about food.">
+                <div class="product-info">
+                  <p class="product-name">Mountain T-Shirt</p>
+                  <p class="product-price">$24.99</p>
+                </div>
+              </div>
+              <div class="product-listing container-item">
+                <img src="img/tshirt-picnic.png" alt="T-shirt with a picnic basket containing chicken, watermelon, and lemonade on the front.">
+                <div class="product-info">
+                  <p class="product-name">Picnic T-Shirt</p>
+                  <p class="product-price">$24.99</p>
+                </div>
+              </div>
+              <div class="product-listing container-item">
+                <img src="img/tshirt-trees.png" alt="T-shirt with walking trees on the front.">
+                <div class="product-info">
+                  <p class="product-name">Trees T-Shirt</p>
+                  <p class="product-price">$24.99</p>
+                </div>
+              </div>
+              <div class="product-listing container-item">
+                <img src="img/tshirt-ufo.png" alt="T-shirt with a UFO abducting a man on the front.">
+                <div class="product-info">
+                  <p class="product-name">UFO T-Shirt</p>
+                  <p class="product-price">$24.99</p>
+                </div>
+              </div>
+              <div class="product-listing container-item">
+                <img src="img/tshirt-falling.png" alt="T-shirt with two falling children on the front.">
+                <div class="product-info">
+                  <p class="product-name">Falling T-Shirt</p>
+                  <p class="product-price">$29.99</p>
+                </div>
+              </div>
+            </div>
+        </section>
+
+      </section>
+      <!-- // COMBINED ELEMENTS SECTION -->
+
+    </div>
+  </body>
+</html>

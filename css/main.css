@@ -1,0 +1,311 @@
+/*
+  STYLE GUIDE STYLING 
+  Styling for the Fit to a Tee website's style guide
+*/
+
+*, *::before, *::after {
+  box-sizing:border-box;
+}
+
+body { /* Setting up the main body, and its padding from the inside contents*/
+  font-family: 'Hind', Arial, Verdana, sans-serif;
+  font-size: 1em;
+  padding: 2rem;
+  color:#777;
+}
+
+div.wrapper { /* The DIV wrapper for the entire page */
+  max-width:80em;
+  margin:0 auto;
+}
+
+section:not([id]) { /* Create borders between each subsection */
+  margin: 1em 0;
+  padding: 0.5em 0;
+  border-top: 0.1em solid #CCC;
+}
+
+section code { /* Styling for code blocks */
+  background-color: #EEE;
+  padding: 0.5em 0.75em;
+  display: block;
+}
+
+span.indent { /* for <span> tags in the <code> tag that need to display indented code */
+  display:inline-block;
+  text-indent:2rem;
+  margin:0;
+  padding:0;
+}
+
+span.indent-2 { /* for <span> tags in the <code> tag that need to display indented code with 2 indents */
+  display:inline-block;
+  text-indent:4rem;
+  margin:0;
+  padding:0;
+}
+
+span.indent-3 { /* for <span> tags in the <code> tag that need to display indented code with 3 indents */
+  display:inline-block;
+  text-indent:6rem;
+  margin:0;
+  padding:0;
+}
+
+/* 
+  INTERACTIVE ELEMENTS -------------------
+*/
+
+/* Styling for the in-text links */
+
+a {
+  color:#EFA867;
+  -webkit-transition: color 0.3s ease-out; 
+  -moz-transition: color 0.3s ease-out; 
+  -o-transition: color 0.3s ease-out; 
+  transition: color 0.3s ease-out;
+}
+
+a:hover, a:focus {
+  color:#724F33;
+  text-decoration: none;
+}
+
+/* Styling for the navigation button */
+
+.button {
+  color:#999;
+  background-color:#FFF;
+  display:inline-block;
+  text-transform:uppercase;
+  font-family: 'Montserrat', Arial, Verdana, sans-serif;
+  text-decoration: none; /* Remove the underline */
+  -webkit-transition: all 0.3s ease-out; 
+  -moz-transition: all 0.3s ease-out; 
+  -o-transition: all 0.3s ease-out; 
+  transition: all 0.3s ease-out;
+}
+
+.navlink { /* Buttons found in the main navigation (<nav> tag) */
+  font-size: 1rem;
+  padding: 0.3em 0.6em;
+  margin:0;
+}
+
+.checkout { /* Specifically, the checkout button in the main navigation */
+  color:#EFA867;
+}
+
+.submit { /* Submit button for forms */
+  color:#EFA867;
+  border-style:solid;
+  border-color:#EFA867;
+  border-width:0.25rem;
+  font-size: 1.25rem; 
+  padding: 0.3em;
+}
+
+.reset { /* Reset button for forms */
+  border-style:solid;
+  border-color:#999;
+  border-width:0.25rem;
+  font-size: 1.25rem;
+  padding: 0.3em;
+}
+
+.submit:hover, .submit:focus, .navlink.checkout:hover, .navlink.checkout:focus { /* Hover/focus states for orange buttons */
+  background-color:#EFA867;
+  color:#FFF;
+}
+
+.reset:hover, .reset:focus, .navlink:hover, .navlink:focus { /* Hover/focus states for grey buttons */
+  background-color:#999;
+  color:#FFF;
+}
+
+/* Styling for the text fields and labels in forms */
+
+.textfield-label {
+  display:block;
+  font-weight:bold;
+  color:#0DB3BC;
+}
+
+.textfield {
+  border-style:solid;
+  border-color:#777;
+  padding-left:0.25rem;
+}
+
+/* 
+  TEXT ELEMENTS -------------------
+*/
+
+/* Styling for the heading elements */
+
+h1 {
+  color:#0DB3BC;
+  font-size:3rem;
+  font-family: 'Montserrat', Arial, Verdana, serif;
+  font-weight: bold;
+  margin:0;
+}
+
+p.author { /* Parent selector for all <h2> elements, but specifically for the subheading (with my name) on each page */
+  color:#777;
+  font-size:1.5rem;
+  font-family: 'Montserrat', Arial, Verdana, serif;
+  font-weight: bold;
+  margin:0 0 1rem 0;
+}
+
+section h2 { /* Specifically for the <h2> tag as the rendered element */
+  font-size:1.9rem;
+  color:#0DB3BC;
+  font-family: 'Montserrat', Arial, Verdana, serif;
+  font-weight: bold;
+  margin-top:1rem;
+}
+
+section h2.subheading { /* Styling specifically for the subheadings (e.g. the <h2> tags that actually act as subheadings, and not the one being rendered as an example element) */
+  margin:3em 0 0.5em 0;
+}
+
+section h3 {
+  color:#515151;
+  font-size:1.5rem;
+  font-family: 'Montserrat', Arial, Verdana, serif;
+  font-weight: bold;
+  margin-top:0.5em;
+}
+
+section h4 {
+  color:#515151;
+  font-size:1.1rem;
+  font-weight: bold;
+  margin-bottom:0.25rem;
+}
+
+/* Styling for the paragraphs */
+
+p {
+  margin-top: 0;
+}
+
+/* Styling for ordered and unordered lists */
+
+ul, ol {
+  color:#0DB3BC;
+}
+
+span.listitem { /* Since both lists employ color attributes to change bullet/number colors, the .listitem class is applied to span tags around the list items in order to turn them back to the standard text grey */
+  color:#777;
+}
+
+/* 
+  COMBINED ELEMENTS -------------------
+*/
+
+/* Styling for the product listings */
+
+.product-listing img { /* For images used for product listings */
+  max-width:100%;
+  padding:0 1rem;
+}
+
+.product-listing { /* The big DIV that holds all of the product info together */
+  display:inline-block;
+  -webkit-box-shadow: 0 0 1rem 0 rgba(0,0,0,0.25);
+  -moz-box-shadow: 0 0 1rem 0 rgba(0,0,0,0.25);
+  box-shadow: 0 0 1rem 0 rgba(0,0,0,0.25);
+  -webkit-transition: box-shadow 0.5s ease-out;
+  -moz-transition: box-shadow 0.5s ease-out;
+  transition: box-shadow 0.5s ease-out;
+}
+
+.product-listing:hover, .product-listing:focus { /* Setting up box-shadow transitions on a hover/focus state */
+  -webkit-box-shadow: 0 0 1rem 0 rgba(0,0,0,0.75);
+  -moz-box-shadow: 0 0 1rem 0 rgba(0,0,0,0.75);
+  box-shadow: 0 0 1rem 0 rgba(0,0,0,0.75);
+}
+
+p.product-name { /* The paragraph that holds the product's name */
+  color:#515151;
+  font-size:1.5rem;
+  font-family: 'Montserrat', Arial, Verdana, serif;
+  font-weight: bold;
+  margin-bottom:0;
+  -webkit-transition: color 0.3s ease-out;
+  -moz-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+p.product-price { /* The paragraph that holds the product's price */
+  color:#515151;
+  font-size:0.9rem;
+  font-family: 'Montserrat', Arial, Verdana, serif;
+  font-weight: bold;
+  margin:0;
+  -webkit-transition: color 0.3s ease-out;
+  -moz-transition: color 0.3s ease-out;
+  transition: color 0.3s ease-out;
+}
+
+.product-info { /* The smaller DIV within .product-listing that holds the product's name and price*/
+  padding:1rem;
+  border-top-style:solid;
+  border-color: #CCC;
+  border-top-width: 0.1rem;
+  -webkit-transition: border-color, background-color 0.3s ease-out;
+  -moz-transition: border-color, background-color 0.3s ease-out;
+  transition: border-color, background-color 0.3s ease-out;
+}
+
+.product-listing:hover .product-info, .product-listing:focus .product-info { /* Setting the info box to change color on hover/focus */
+  border-top-style:solid;
+  border-top-color: #EFA867;
+  border-top-width: 0.1rem;
+  background-color: #EFA867;
+}
+
+.product-listing:hover p.product-name, .product-listing:focus p.product-name, .product-listing:hover p.product-price, .product-listing:focus p.product-price { /*  Setting the price and name to change color on hover/focus */
+  color:#FFF;
+}
+
+/* Styling for the grid elements */
+
+.container { /* The major flexbox container element */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap:wrap;
+}
+
+.container-item { /* Individual items within the flexbox container */
+  margin:1rem;
+}
+
+/* 
+  CITATIONS -------------------
+*/
+
+ul.citations {
+  margin-left: 0.25em;
+  padding-left: 0.25em;
+}
+
+ul.citations li {
+  list-style-type: none;
+  margin-left: 0;
+  padding-left: 0;
+  padding-bottom: 1em;
+}
+
+ul.citations li strong {
+  font-weight: normal;
+  font-style: italic;
+}
+
+cite {
+  font-style: normal;
+}
