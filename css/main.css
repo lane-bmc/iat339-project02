@@ -198,6 +198,10 @@ ul, ol {
   color:#0DB3BC;
 }
 
+ul {
+  list-style-type: square;
+}
+
 span.listitem { /* Since both lists employ color attributes to change bullet/number colors, the .listitem class is applied to span tags around the list items in order to turn them back to the standard text grey */
   color:#777;
 }
