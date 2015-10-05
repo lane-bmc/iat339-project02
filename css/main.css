@@ -225,6 +225,8 @@ span.listitem { /* Since both lists employ color attributes to change bullet/num
   -webkit-transition: box-shadow 0.5s ease-out;
   -moz-transition: box-shadow 0.5s ease-out;
   transition: box-shadow 0.5s ease-out;
+  margin:0;
+
 }
 
 .product-listing:hover, .product-listing:focus { /* Setting up box-shadow transitions on a hover/focus state */
