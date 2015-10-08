@@ -52,6 +52,36 @@ span.indent-3 { /* for <span> tags in the <code> tag that need to display indent
   padding:0;
 }
 
+.colour-palette {
+  width:10rem;
+  height:10rem;
+  display:inline-block;
+}
+
+.colour-palette:hover, .colour-palette:focus {
+}
+
+.colour-teal {
+  background-color:#0DB3BC;
+}
+
+.colour-orange {
+  background-color:#EFA867;
+}
+
+.colour-lightgray {
+  background-color:#999;
+}
+
+.colour-darkgray {
+  background-color:#777;
+}
+
+.colour-darkestgray {
+  background-color:#515151;
+}
+
+
 /* 
   INTERACTIVE ELEMENTS -------------------
 */
