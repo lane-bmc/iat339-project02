@@ -23,12 +23,14 @@
       <p>Welcome to the <em>Fit to a Tee</em> style guide. This guide is a resource for maintaining a consistent design language and coding convention around Fit to a Tee's UI. It's used for storing and maintaining a living database of modular UI elements that make up our site, so that compliancy and consistency can be found across Fit to a Tee's site.</p>
 
       <!-- // NAVIGATION -->
-      <nav>
-        <a class="button navlink" href="#interactive_elements">Interactive Elements</a><a class="button navlink" href="#text_elements">Text Elements</a><a class="button navlink" href="#combined_elements">Combined Elements</a>
+      <nav class="fixed-nav-bar">
+        <img class="img-navbar" src="img/logo-navbar.png" alt="Fit to a Tee logo.">
+        <ul>
+          <li><a class="button navlink" href="#interactive_elements">Interactive Elements</a></li><li><a class="button navlink" href="#text_elements">Text Elements</a></li><li><a class="button navlink" href="#combined_elements">Combined Elements</a></li><li><a class="button navlink" href="#templates">Templates</a></li>
       </nav>
-      <!-- // NAVIGATION -->
+      <!-- NAVIGATION // -->
 
-      <!-- INTERACTIVE ELEMENTS SECTION // -->
+      <!-- // INTERACTIVE ELEMENTS SECTION -->
       <section id="interactive_elements">
 
         <h2 class="subheading">Interactive Elements</h2>
@@ -100,11 +102,11 @@
         </section>
 
       </section>
-      <!-- // INTERACTIVE ELEMENTS SECTION -->
+      <!-- INTERACTIVE ELEMENTS SECTION // -->
 
 
 
-      <!-- TEXT ELEMENTS SECTION // -->
+      <!-- // TEXT ELEMENTS SECTION -->
       <section id="text_elements">
 
         <h2 class="subheading">Text Elements</h2>
@@ -193,11 +195,11 @@
         </section>
 
       </section>
-      <!-- // TEXT ELEMENTS SECTION -->
+      <!-- TEXT ELEMENTS SECTION // -->
 
 
 
-      <!-- COMBINED ELEMENTS SECTION // -->
+      <!-- // COMBINED ELEMENTS SECTION -->
       <section id="combined_elements">
 
         <h2 class="subheading">Combined Elements</h2>
@@ -352,7 +354,32 @@
         </section>
 
       </section>
-      <!-- // COMBINED ELEMENTS SECTION -->
+      <!-- COMBINED ELEMENTS SECTION // -->
+
+      <!-- // TEMPLATES SECTION -->
+      <section id="templates">
+
+        <h2 class="subheading">Templates</h2>
+
+        <!-- Navigation Bar -->
+
+        <section>
+          <h3>Navigation Bar</h3>
+
+            <h4>Sample code:</h4>
+            <code>&lt;nav class="fixed-nav-bar"&gt;<br/>
+              <span class="indent">&lt;img class="img-navbar" src="img/logo-navbar.png" alt="Fit to a Tee logo."&gt;</span><br/>
+              <span class="indent">&lt;ul&gt;</span><br/>
+                <span class="indent-2">&lt;li&gt;&lt;a class="button navlink" href=""&gt;Current Styles&lt;/a&gt;&lt;/li&gt;</span><br/>
+                <span class="indent-2">&lt;li&gt;&lt;a class="button navlink" href=""&gt;Past Styles&lt;/a&gt;&lt;/li&gt;</span><br/>
+                <span class="indent-2">&lt;li&gt;&lt;a class="button navlink" href=""&gt;About&lt;/a&gt;&lt;/li&gt;</span><br/>
+                <span class="indent-2">&lt;li&gt;&lt;a class="button navlink checkout" href=""&gt;Checkout (2)&lt;/a&gt;&lt;/li&gt;</span><br/>
+              <span class="indent">&lt;/ul&gt;</span><br/>
+            &lt;/nav&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <p>See navigation bar at the top of the page</p>
+        </section>
 
     </div>
   </body>
