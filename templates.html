@@ -5,7 +5,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Fit to a Tee Style Guide</title>
+    <title>Fit to a Tee Templates</title>
 
     <link href="css/normalize.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Hind:400,600' rel='stylesheet' type='text/css'>    
@@ -15,29 +15,44 @@
 
   <body>
 
+    <nav class="fixed-nav-bar">
+      <img class="img-navbar" src="img/logo-navbar.png" alt="Fit to a Tee logo.">
+      <ul>
+        <li><a class="button navlink" href="">Current Styles</a></li>
+        <li><a class="button navlink" href="">Past Styles</a></li>
+        <li><a class="button navlink" href="">About</a></li>
+        <li><a class="button navlink checkout" href="">Checkout (2)</a></li>
+      </ul>
+    </nav>
+
     <div class="wrapper"> <!-- // DIV that wraps around the whole document -->
 
-      <h1>Fit to a Tee Style Guide</h1>
-      <p class="author">Brendan Lane</p>
-
-      <p>Welcome to the <em>Fit to a Tee</em> style guide. This guide is a resource for maintaining a consistent design language and coding convention around Fit to a Tee's UI. It's used for storing and maintaining a living database of modular UI elements that make up our site, so that compliancy and consistency can be found across Fit to a Tee's site.</p>
-
-      <!-- // NAVIGATION -->
-      <nav>
-        <a class="button navlink" href="#interactive_elements">Interactive Elements</a><a class="button navlink" href="#text_elements">Text Elements</a><a class="button navlink" href="#combined_elements">Combined Elements</a>
-      </nav>
-      <!-- // NAVIGATION -->
+      <h1>Fit to a Tee Templates</h1>
+      <p class="author">Brendan Lane and Angela Hu</p>
 
       <!-- INTERACTIVE ELEMENTS SECTION // -->
-      <section id="interactive_elements">
+      <section id="templates">
 
-        <h2 class="subheading">Interactive Elements</h2>
+        <h2 class="subheading">Templates</h2>
 
-        <!-- Navigation and Checkout Button Styling Section -->
+        <!-- Navigation Bar -->
 
         <section>
-          <h3>Colour Palette</h3>
-            <div class="colour-palette colour-teal"></div><div class="colour-palette colour-orange"></div><div class="colour-palette colour-lightgray"></div><div class="colour-palette colour-darkgray"></div><div class="colour-palette colour-darkestgray"></div>
+          <h3>Navigation Bar</h3>
+
+            <h4>Sample code:</h4>
+            <code>&lt;nav class="fixed-nav-bar"&gt;<br/>
+              <span class="indent">&lt;img class="img-navbar" src="img/logo-navbar.png" alt="Fit to a Tee logo."&gt;</span><br/>
+              <span class="indent">&lt;ul&gt;</span><br/>
+                <span class="indent-2">&lt;li&gt;&lt;a class="button navlink" href=""&gt;Current Styles&lt;/a&gt;&lt;/li&gt;</span><br/>
+                <span class="indent-2">&lt;li&gt;&lt;a class="button navlink" href=""&gt;Past Styles&lt;/a&gt;&lt;/li&gt;</span><br/>
+                <span class="indent-2">&lt;li&gt;&lt;a class="button navlink" href=""&gt;About&lt;/a&gt;&lt;/li&gt;</span><br/>
+                <span class="indent-2">&lt;li&gt;&lt;a class="button navlink checkout" href=""&gt;Checkout (2)&lt;/a&gt;&lt;/li&gt;</span><br/>
+              <span class="indent">&lt;/ul&gt;</span><br/>
+            &lt;/nav&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <p>See navigation bar at the top of the page</p>
         </section>
 
         <section>
