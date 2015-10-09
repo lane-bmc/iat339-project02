@@ -9,13 +9,25 @@
 
 body { /* Setting up the main body, and its padding from the inside contents*/
   font-family: 'Hind', Arial, Verdana, sans-serif;
-  font-size: 1em;
-  padding: 2rem;
+  font-size:100%;
+  padding:14rem 2rem 2rem 2rem;
   color:#777;
 }
 
+@media (min-width:30em) {
+  body {
+    padding:10rem 2rem 2rem 2rem;
+  }
+}
+
+@media (min-width:56.25em) {
+  body {
+    padding:6rem 2rem 2rem 2rem;
+  }
+}
+
 div.wrapper { /* The DIV wrapper for the entire page */
-  max-width:80em;
+  max-width:80rem;
   margin:0 auto;
 }
 
@@ -33,32 +45,29 @@ section code { /* Styling for code blocks */
 
 span.indent { /* for <span> tags in the <code> tag that need to display indented code */
   display:inline-block;
-  text-indent:2rem;
+  text-indent:2em;
   margin:0;
   padding:0;
 }
 
 span.indent-2 { /* for <span> tags in the <code> tag that need to display indented code with 2 indents */
   display:inline-block;
-  text-indent:4rem;
+  text-indent:4em;
   margin:0;
   padding:0;
 }
 
 span.indent-3 { /* for <span> tags in the <code> tag that need to display indented code with 3 indents */
   display:inline-block;
-  text-indent:6rem;
+  text-indent:6em;
   margin:0;
   padding:0;
 }
 
 .colour-palette {
-  width:10rem;
+  width:20%;
   height:10rem;
   display:inline-block;
-}
-
-.colour-palette:hover, .colour-palette:focus {
 }
 
 .colour-teal {
@@ -117,9 +126,21 @@ a:hover, a:focus {
 }
 
 .navlink { /* Buttons found in the main navigation (<nav> tag) */
-  font-size: 1rem;
+  font-size: 0.75em;
   padding: 0.3em 0.6em;
   margin:0;
+}
+
+@media (max-width:30em) {
+  .navlink {
+    padding:0 auto;
+  }
+}
+
+@media (min-width:56.25em) {
+  .navlink {
+    font-size: 1em;
+  }
 }
 
 .checkout { /* Specifically, the checkout button in the main navigation */
@@ -175,18 +196,40 @@ a:hover, a:focus {
 
 h1 {
   color:#0DB3BC;
-  font-size:3rem;
+  font-size:1.675rem;
   font-family: 'Montserrat', Arial, Verdana, serif;
-  font-weight: bold;
   margin:0;
 }
 
-p.author { /* Parent selector for all <h2> elements, but specifically for the subheading (with my name) on each page */
+@media (min-width:30em) {
+  h1 {
+    font-size: 2.215rem;
+  }
+}
+
+@media (min-width:56.25em) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
+p.author { /* For the subheading (with author names) on each page */
   color:#777;
-  font-size:1.5rem;
+  font-size:1rem;
   font-family: 'Montserrat', Arial, Verdana, serif;
-  font-weight: bold;
   margin:0 0 1rem 0;
+}
+
+@media (min-width:30em) {
+  p.author {
+    font-size: 1.25rem;
+  }
+}
+
+@media (min-width:56.25em) {
+  p.author {
+    font-size: 1.5rem;
+  }
 }
 
 section h2 { /* Specifically for the <h2> tag as the rendered element */
@@ -344,4 +387,71 @@ ul.citations li strong {
 
 cite {
   font-style: normal;
+}
+
+/* 
+  TEMPLATES
+*/
+
+/*Navigation Bar*/
+
+nav.fixed-nav-bar {
+  position:absolute;
+  width: 100%;
+  -webkit-box-shadow: 0 0.25rem 0.25rem 0 rgba(0,0,0,0.25);
+  -moz-box-shadow: 0 0.25rem 0.25rem 0 rgba(0,0,0,0.25);
+  box-shadow: 0 0.25rem 0.25rem 0 rgba(0,0,0,0.25);
+  top:0;
+  left:0;
+  right:0;
+  background-color:#FFF;
+  margin-bottom:2rem;
+}
+
+@media (min-width:56.25em) {
+  nav.fixed-nav-bar {
+    position:fixed;
+    height:4rem;
+  }
+}
+
+.img-navbar {
+  display:block;
+  margin:0 auto;
+  padding:1em 0;
+  max-height:4em;
+  width:auto;
+}
+
+@media (min-width:56.25em) {
+  .img-navbar {
+    max-height:100%;
+    padding:1em 0 1em 2em;
+    display:inline-block;
+    float:left;
+  }
+}
+
+nav ul {
+  width:100%;
+  padding-right:2em;
+  text-align:center;
+}
+
+@media (min-width:56.25em) {
+  nav ul {
+    display:block;
+    text-align:right;
+  }
+}
+
+nav ul li {
+  list-style-type:none;
+  display:inline-block;
+}
+
+@media (max-width:29.999em) {
+  nav ul li {
+    width:100%;
+  }
 }
