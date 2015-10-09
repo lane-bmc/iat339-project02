@@ -147,6 +147,16 @@ a:hover, a:focus {
   color:#EFA867;
 }
 
+@media (max-width:34.999em) {
+  .submit, .reset {
+    width:100%;
+  }
+
+  .submit {
+    margin-bottom:0.5em;
+  }
+}
+
 .submit { /* Submit button for forms */
   color:#EFA867;
   border-style:solid;
@@ -180,12 +190,29 @@ a:hover, a:focus {
   display:block;
   font-weight:bold;
   color:#0DB3BC;
+  font-size:1.25em;
 }
 
 .textfield {
   border-style:solid;
+  border-width:0.125rem;
   border-color:#777;
   padding-left:0.25rem;
+  width:100%;
+  margin-bottom:1em;
+  display:block;
+  font-size:1em;
+}
+
+textarea {
+  max-width:100%;
+  min-height:10em;
+}
+
+@media (min-width:35em) {
+  .textfield-label, .textfield {
+    max-width:25em;
+  }
 }
 
 /* 
