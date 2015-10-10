@@ -441,7 +441,7 @@
             <div class="cart-item">
               <div class="cart-item-box">
                 <div class="placeholder-img-cart-item"></div>
-                <dl class="container cart-item-info">
+                <dl class="container">
                   <div class="container-item">
                     <dt>Colour</dt>
                     <dd>Red</dd>
@@ -463,6 +463,84 @@
               <a class="button edit" href="">Edit</a>
               <a class="button delete" href="">Delete</a>
             </div>
+        </section>
+
+        <section>
+          <h3>Detailed Product</h3>
+
+            <h4>CSS selector:</h4>
+            <p>.product-view</p>
+
+            <h4>Sample code:</h4>
+            <code>&lt;div class="product-view"&gt;</br>
+              <span class="indent">&lt;div class="placeholder-img-product-view"&gt;&lt;/div&gt;</span><br/>
+              <span class="indent">&lt;h1&gt;Bike T-Shirt&lt;/h1&gt;</span><br/>
+              <span class="indent">&lt;p class="product-price"&gt;$29.99&lt;/p&gt;</span><br/>
+              <span class="indent">&lt;p&gt;This fun bike t-shirt is made from a 100% bamboo tri-blend, and available in red, black, and white. It's a unisex fit and can be machine-washed and dried without any trouble.&lt;/p&gt;</span><br/>
+              <span class="indent">&lt;form&gt;</span><br/>
+                <span class="indent-2">&lt;div class="container"&gt;</span><br/>
+                  <span class="indent-3">&lt;div class="container-item"&gt;</span><br/>
+                    <span class="indent-4">&lt;label class="textfield-label" for="select-colour"&gt;Colour&lt;/label&gt;</span><br/>
+                    <span class="indent-4">&lt;select id="select-colour" class="textfield"&gt;</span><br/>
+                      <span class="indent-5">&lt;option value="red"&gt;Red&lt;/option&gt;</span><br/>
+                      <span class="indent-5">&lt;option value="black"&gt;Black&lt;/option&gt;</span><br/>
+                      <span class="indent-5">&lt;option value="white"&gt;White&lt;/option&gt;</span><br/>
+                    <span class="indent-4">&lt;/select&gt;</span><br/>
+                  <span class="indent-3">&lt;/div&gt;</span><br/>
+                  <span class="indent-3">&lt;div class="container-item"&gt;</span><br/>
+                    <span class="indent-4">&lt;label class="textfield-label" for="select-size"&gt;Size&lt;/label&gt;</span><br/>
+                    <span class="indent-4">&lt;select id="select-size" class="textfield"&gt;</span><br/>
+                      <span class="indent-5">&lt;option value="extra-small"&gt;XS&lt;/option&gt;</span><br/>
+                      <span class="indent-5">&lt;option value="small"&gt;S&lt;/option&gt;</span><br/>
+                      <span class="indent-5">&lt;option value="medium"&gt;M&lt;/option&gt;</span><br/>
+                      <span class="indent-5">&lt;option value="large"&gt;L&lt;/option&gt;</span><br/>
+                      <span class="indent-5">&lt;option value="extra-large"&gt;XL&lt;/option&gt;</span><br/>
+                    <span class="indent-4">&lt;/select&gt;</span><br/>
+                  <span class="indent-3">&lt;/div&gt;</span><br/>
+                  <span class="indent-3">&lt;div class="container-item"&gt;</span><br/>
+                    <span class="indent-4">&lt;label class="textfield-label" for="select-quantity"&gt;Quantity&lt;/label&gt;</span><br/>
+                    <span class="indent-4">&lt;input type="text" class="textfield" placeholder="Quantity" id="select-quantity"&gt;</span><br/>
+                  <span class="indent-3">&lt;/div&gt;</span><br/>
+                <span class="indent-2">&lt;/div&gt;</span><br/>
+                <span class="indent-2">&lt;input type="submit" class="button submit" value="Add To Cart"&gt;</span><br/>
+              <span class="indent">&lt;/form&gt;</span><br/>
+            &lt;/div&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <div class="product-view">
+              <div class="placeholder-img-product-view"></div>
+              <h1>Bike T-Shirt</h1>
+              <p class="product-price">$29.99</p>
+              <p>This fun bike t-shirt is made from a 100% bamboo tri-blend, and available in red, black, and white. It's a unisex fit and can be machine-washed and dried without any trouble.</p>
+              <form>
+                <div class="container">
+                  <div class="container-item">
+                    <label class="textfield-label" for="select-colour">Colour</label>
+                    <select id="select-colour" class="textfield">
+                      <option value="red">Red</option>
+                      <option value="black">Black</option>
+                      <option value="white">White</option>
+                    </select>
+                  </div>
+                  <div class="container-item">
+                    <label class="textfield-label" for="select-size">Size</label>
+                    <select id="select-size" class="textfield">
+                      <option value="extra-small">XS</option>
+                      <option value="small">S</option>
+                      <option value="medium">M</option>
+                      <option value="large">L</option>
+                      <option value="extra-large">XL</option>
+                    </select>
+                  </div>
+                  <div class="container-item">
+                    <label class="textfield-label" for="select-quantity">Quantity</label>
+                    <input type="text" class="textfield" placeholder="Quantity" id="select-quantity">
+                  </div>
+                </div>
+                <input type="submit" class="button submit" value="Add To Cart">
+              </form>
+            </div>
+        </section>
 
         <!-- TEMPLATES SECTION // -->
 
