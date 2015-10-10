@@ -148,16 +148,20 @@ a:hover, a:focus {
 }
 
 @media (max-width:34.999em) {
-  .submit, .reset {
+  .submit, .reset, .edit, .delete {
     width:100%;
   }
 
-  .submit {
+  .submit, .edit {
     margin-bottom:0.5em;
+  }
+
+  .edit, .delete {
+    text-align:center;
   }
 }
 
-.submit { /* Submit button for forms */
+.submit, .edit { /* Submit button for forms */
   color:#EFA867;
   border-style:solid;
   border-color:#EFA867;
@@ -166,7 +170,7 @@ a:hover, a:focus {
   padding: 0.3em;
 }
 
-.reset { /* Reset button for forms */
+.reset, .delete { /* Reset button for forms */
   border-style:solid;
   border-color:#999;
   border-width:0.15rem;
@@ -174,12 +178,12 @@ a:hover, a:focus {
   padding: 0.3em;
 }
 
-.submit:hover, .submit:focus, .navlink.checkout:hover, .navlink.checkout:focus { /* Hover/focus states for orange buttons */
+.submit:hover, .submit:focus, .navlink.checkout:hover, .navlink.checkout:focus, .edit:hover, .edit:focus { /* Hover/focus states for orange buttons */
   background-color:#EFA867;
   color:#FFF;
 }
 
-.reset:hover, .reset:focus, .navlink:hover, .navlink:focus { /* Hover/focus states for grey buttons */
+.reset:hover, .reset:focus, .navlink:hover, .navlink:focus, .delete:hover, .delete:focus { /* Hover/focus states for grey buttons */
   background-color:#999;
   color:#FFF;
 }
@@ -196,7 +200,7 @@ a:hover, a:focus {
 .textfield {
   border-style:solid;
   border-width:0.125rem;
-  border-color:#777;
+  border-color:#999;
   padding-left:0.25rem;
   width:100%;
   margin-bottom:1em;
@@ -480,5 +484,61 @@ nav ul li {
 @media (max-width:29.999em) {
   nav ul li {
     width:100%;
+  }
+}
+
+/*Shopping Cart Item*/
+
+.placeholder-img-cart-item {
+  width:100%;
+  height:15em;
+  background-color:#999;
+}
+
+@media (min-width:35em) {
+  .placeholder-img-cart-item {
+    width:10em;
+    height:10em;
+    float:left;
+  }
+}
+
+.cart-item-box {
+  width:100%;
+  display:inline-block;
+  margin-bottom:1em;
+}
+
+.cart-item dd {
+  margin:0;
+}
+
+.cart-item dt {
+  font-weight:bold;
+  color:#0DB3BC;
+}
+
+.cart-item dd, .cart-item dt {
+  font-size:1.25em;
+}
+
+.cart-item {
+  padding-bottom:1em;
+  border-bottom: 0.1em solid #CCC;
+}
+
+.cart-item div.container-item {
+  margin:0 1rem 1rem 1rem;
+}
+
+dl.container {
+  margin:1em 0;
+  align-content:center;
+  align-items:center;
+}
+
+@media (min-width:35em) {
+  dl.container {
+    margin:0;
   }
 }
