@@ -548,18 +548,28 @@
           <h3>2-Column Image Row</h3>
 
             <h4>CSS selector:</h4>
-            <p>.fixed-nav-bar</p>
+            <p>.col-1of3, .col-2of3</p>
 
             <h4>Sample code:</h4>
-            <code>&lt;nav class="fixed-nav-bar"&gt;<br/>
-              <span class="indent">&lt;img class="img-navbar" src="img/logo-navbar.png" alt="Fit to a Tee logo."&gt;</span><br/>
-              <span class="indent">&lt;ul&gt;</span><br/>
-                <span class="indent-2">&lt;li&gt;&lt;a class="button navlink" href=""&gt;Current Styles&lt;/a&gt;&lt;/li&gt;</span><br/>
-                <span class="indent-2">&lt;li&gt;&lt;a class="button navlink" href=""&gt;Past Styles&lt;/a&gt;&lt;/li&gt;</span><br/>
-                <span class="indent-2">&lt;li&gt;&lt;a class="button navlink" href=""&gt;About&lt;/a&gt;&lt;/li&gt;</span><br/>
-                <span class="indent-2">&lt;li&gt;&lt;a class="button navlink checkout" href=""&gt;Checkout (2)&lt;/a&gt;&lt;/li&gt;</span><br/>
-              <span class="indent">&lt;/ul&gt;</span><br/>
-            &lt;/nav&gt;</code>
+            <code>&lt;div class="container more-below"&gt;<br/>
+              <span class="indent">&lt;div class="container-item col-1of3"&gt;</span><br/>
+                <span class="indent-2">&lt;div class="img-filler"&gt;&lt;/div&gt;</span><br/>
+              <span class="indent">&lt;/div&gt;</span><br/>
+              <span class="indent">&lt;div class="container-item col-2of3"&gt;</span><br/>
+                <span class="indent-2">&lt;h2&gt;Heading&lt;/h2&gt;</span><br/>
+                <span class="indent-2">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</span><br/>
+              <span class="indent">&lt;/div&gt;</span><br/>
+            &lt;/div&gt;<br/>
+            <br/>
+            &lt;div class="container"&gt;<br/>
+              <span class="indent">&lt;div class="container-item col-2of3"&gt;</span><br/>
+                <span class="indent-2">&lt;h2&gt;Heading&lt;/h2&gt;</span><br/>
+                <span class="indent-2">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</span><br/>
+              <span class="indent">&lt;/div&gt;</span><br/>
+              <span class="indent">&lt;div class="container-item col-1of3"&gt;</span><br/>
+                <span class="indent-2">&lt;div class="img-filler"&gt;&lt;/div&gt;</span><br/>
+              <span class="indent">&lt;/div&gt;</span><br/>
+            &lt;/div&gt;</code>
 
             <h4>Rendered element:</h4>
             <div class="container more-below">
