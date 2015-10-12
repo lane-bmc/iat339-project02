@@ -616,31 +616,37 @@ dl.container {
   background-color:#999;
 }
 
-.more-below { /* Class to be used if there's more content below */
+.more-below, .more-below-small { /* Class to be used if there's more content below */
   border-bottom: 0.1em solid #CCC;
+  margin-bottom:2rem;
+  padding-bottom:2em;
 }
 
 @media (min-width:50em) {
   .col-1of3 {
     width:33.33%; /* At a certain screen size, make the columns 33% and 66% */
-    float:left;
   }
 
   .col-2of3 {
     width:66.66%;
-    float:left;
+  }
+
+  .col-1of2 {
+    width:50%;
   }
 
   [class*='col-'] { /* Remove outside margins */
-    padding-right:1em;
+    padding-right:2em;
+    float:left;
   }
 
   [class*='col-']:last-of-type { /* Remove outside margins */
     padding-right:0;
   }
 
-  .more-below {
-    margin-bottom:2rem;
-    padding-bottom:2em;
+  .more-below-small {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 }
