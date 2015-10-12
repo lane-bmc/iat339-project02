@@ -27,6 +27,7 @@
         <img class="img-navbar" src="img/logo-navbar.png" alt="Fit to a Tee logo.">
         <ul>
           <li><a class="button navlink" href="#interactive_elements">Interactive Elements</a></li><li><a class="button navlink" href="#text_elements">Text Elements</a></li><li><a class="button navlink" href="#combined_elements">Combined Elements</a></li><li><a class="button navlink" href="#templates">Templates</a></li>
+        </ul>
       </nav>
       <!-- NAVIGATION // -->
 
@@ -39,7 +40,7 @@
 
         <section>
           <h3>Colour Palette</h3>
-            <div class="colour-palette colour-teal"></div><div class="colour-palette colour-orange"></div><div class="colour-palette colour-lightgray"></div><div class="colour-palette colour-darkgray"></div><div class="colour-palette colour-darkestgray"></div>
+            <div class="colour-teal"></div><div class="colour-orange"></div><div class="colour-lightgray"></div><div class="colour-darkgray"></div><div class="colour-darkestgray"></div>
         </section>
 
         <section>
@@ -542,52 +543,52 @@
             </div>
         </section>
 
-        <!-- 2-Column Image Row -->
+        <!-- Layout Grid System -->
 
         <section>
-          <h3>2-Column Image Row</h3>
+          <h3>Layout Grid System</h3>
 
             <h4>CSS selector:</h4>
             <p>.col-1of3, .col-2of3</p>
 
             <h4>Sample code:</h4>
-            <code>&lt;div class="container more-below"&gt;<br/>
-              <span class="indent">&lt;div class="container-item col-1of3"&gt;</span><br/>
+            <code>&lt;div class="grid-container more-below"&gt;<br/>
+              <span class="indent">&lt;div class="col-1of3"&gt;</span><br/>
                 <span class="indent-2">&lt;div class="img-filler"&gt;&lt;/div&gt;</span><br/>
               <span class="indent">&lt;/div&gt;</span><br/>
-              <span class="indent">&lt;div class="container-item col-2of3"&gt;</span><br/>
+              <span class="indent">&lt;div class="col-2of3"&gt;</span><br/>
                 <span class="indent-2">&lt;h2&gt;Heading&lt;/h2&gt;</span><br/>
                 <span class="indent-2">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</span><br/>
               <span class="indent">&lt;/div&gt;</span><br/>
             &lt;/div&gt;<br/>
             <br/>
-            &lt;div class="container"&gt;<br/>
-              <span class="indent">&lt;div class="container-item col-2of3"&gt;</span><br/>
+            &lt;div class="grid-container"&gt;<br/>
+              <span class="indent">&lt;div class="col-2of3"&gt;</span><br/>
                 <span class="indent-2">&lt;h2&gt;Heading&lt;/h2&gt;</span><br/>
                 <span class="indent-2">&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&lt;/p&gt;</span><br/>
               <span class="indent">&lt;/div&gt;</span><br/>
-              <span class="indent">&lt;div class="container-item col-1of3"&gt;</span><br/>
+              <span class="indent">&lt;div class="col-1of3"&gt;</span><br/>
                 <span class="indent-2">&lt;div class="img-filler"&gt;&lt;/div&gt;</span><br/>
               <span class="indent">&lt;/div&gt;</span><br/>
             &lt;/div&gt;</code>
 
             <h4>Rendered element:</h4>
-            <div class="container more-below">
-              <div class="container-item col-1of3">
+            <div class="grid-container more-below">
+              <div class="col-1of3">
                 <div class="img-filler"></div>
               </div>
-              <div class="container-item col-2of3">
+              <div class="col-2of3">
                 <h2>Heading</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
             </div>
 
-            <div class="container">
-              <div class="container-item col-2of3">
+            <div class="grid-container">
+              <div class="col-2of3">
                 <h2>Heading</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
               </div>
-              <div class="container-item col-1of3">
+              <div class="col-1of3">
                 <div class="img-filler"></div>
               </div>
             </div>

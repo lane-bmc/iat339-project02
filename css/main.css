@@ -10,11 +10,11 @@
 body { /* Setting up the main body, and its padding from the inside contents*/
   font-family: 'Hind', Arial, Verdana, sans-serif;
   font-size:100%;
-  padding:14rem 2rem 2rem 2rem; /* Lots of top padding for the smallest view, in which the navbar comes down a lot */
+  padding:17rem 2rem 2rem 2rem; /* Lots of top padding for the smallest view, in which the navbar comes down a lot */
   color:#777;
 }
 
-@media (min-width:30em) {
+@media (min-width:42.51em) {
   body {
     padding:10rem 2rem 2rem 2rem; /* Top padding gets reduced as the screen size increases */
   }
@@ -43,7 +43,7 @@ section code { /* Styling for code blocks */
   display: block;
 }
 
-.indent, .indent-2, .indent-3, .indent-4, .indent-5 { /*All indent <span> tags*/
+[class*='indent'] { /*All indent <span> tags*/
   display:inline-block;
   margin:0;
   padding:0;
@@ -69,7 +69,7 @@ span.indent-5 { /* for <span> tags in the <code> tag that need to display indent
   text-indent:10em;
 }
 
-.colour-palette { /* Colour palette <div> tags */
+[class*='colour-'] { /* Colour palette <div> tags */
   width:20%;
   height:10rem;
   display:inline-block;
@@ -131,15 +131,9 @@ a:hover, a:focus {
 }
 
 .navlink { /* Buttons found in the main navigation (<nav> tag) */
-  font-size: 0.75em;
+  font-size: 1em;
   padding: 0.3em 0.6em;
   margin:0;
-}
-
-@media (min-width:56.25em) { /*Font size increases when screen size gets past 56.25em*/
-  .navlink {
-    font-size: 1em;
-  }
 }
 
 .checkout { /* Specifically, the checkout button in the main navigation */
@@ -147,20 +141,20 @@ a:hover, a:focus {
 }
 
 @media (max-width:34.999em) { /* When the screen is small, have the buttons span the entire screen width and center the text */
-  .submit, .reset, .edit, .delete {
+  .submit, .reset, .edit, .delete, .more-info {
     width:100%;
   }
 
-  .submit, .edit {
+  .submit, .edit, .more-info {
     margin-bottom:0.5em;
   }
 
-  .edit, .delete {
+  .edit, .delete, .more-info {
     text-align:center;
   }
 }
 
-.submit, .edit { /* Submit button for forms */
+.submit, .edit, .more-info { /* Submit button for forms */
   color:#EFA867;
   border-style:solid;
   border-color:#EFA867;
@@ -177,7 +171,7 @@ a:hover, a:focus {
   padding: 0.3em;
 }
 
-.submit:hover, .submit:focus, .navlink.checkout:hover, .navlink.checkout:focus, .edit:hover, .edit:focus { /* Hover/focus states for orange buttons */
+.submit:hover, .submit:focus, .navlink.checkout:hover, .navlink.checkout:focus, .edit:hover, .edit:focus, .more-info:hover, .more-info:focus { /* Hover/focus states for orange buttons */
   background-color:#EFA867;
   color:#FFF;
 }
@@ -329,7 +323,6 @@ span.listitem { /* Since both lists employ color attributes to change bullet/num
   -moz-transition: box-shadow 0.5s ease-out;
   transition: box-shadow 0.5s ease-out;
   margin:0;
-
 }
 
 .product-listing:hover, .product-listing:focus { /* Setting up box-shadow transitions on a hover/focus state */
@@ -381,9 +374,9 @@ p.product-price { /* The paragraph that holds the product's price */
   color:#FFF;
 }
 
-/* Styling for the grid elements */
+/* Styling for the Flexbox grid elements */
 
-.container { /* The major flexbox container element */
+.container { /* The major flexbox container element - not used for overall grid layout, but for other flexible items */
   display: -webkit-flex;
   display: -ms-flex;
   display: flex;
@@ -459,6 +452,16 @@ nav.fixed-nav-bar { /* The top navigation bar */
   padding:1em 0;
   max-height:4em;
   width:auto;
+  opacity:1;
+  -webkit-transition: all 0.3s ease-out; 
+  -moz-transition: all 0.3s ease-out; 
+  -o-transition: all 0.3s ease-out; 
+  transition: all 0.3s ease-out;
+}
+}
+
+.img-navbar:hover, .img-navbar:focus { /* When the screen is small, have the logo centered and above the navigation */
+  opacity:0.5;
 }
 
 @media (min-width:56.25em) { /* With a larger screen, have the logo off to the left and float the navigation to the right */
@@ -488,7 +491,7 @@ nav ul li {
   display:inline-block; /* Navigation items are side-by-side with a larger screen size */
 }
 
-@media (max-width:29.999em) {
+@media (max-width:42.5em) {
   nav ul li {
     width:100%; /* With a smaller screen size, navigation items are stacked on top of each other */
   }
@@ -590,10 +593,20 @@ dl.container {
   display:inline-block;
 }
 
-/*2-Column Image Row*/
+/*Grid System*/
 
-.col-1of3, .col-2of3 { /* By default (mobile-first) columns are stacked */
-  flex-grow:1;
+.grid-container { /* Regular grids used for layout grids (flexbox reserved for other kinds of scaling info) */
+  width:100%;
+}
+
+.grid-container:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+[class*='col-'] { /* By default (mobile-first) columns are stacked */
+  width:100%;
   margin:1em 0;
 }
 
@@ -609,36 +622,25 @@ dl.container {
 
 @media (min-width:50em) {
   .col-1of3 {
-    max-width:50%; /* At a certain screen size, make the columns half-width */
+    width:33.33%; /* At a certain screen size, make the columns 33% and 66% */
+    float:left;
   }
 
   .col-2of3 {
-    max-width:50%;
+    width:66.66%;
+    float:left;
   }
 
-  .col-1of3:first-of-type, .col-2of3:first-of-type { /* Remove outside margins */
-    margin-left:0;
-    margin-right:1em;
+  [class*='col-'] { /* Remove outside margins */
+    padding-right:1em;
   }
 
-  .col-1of3:last-of-type, .col-2of3:last-of-type { /* Remove outside margins */
-    margin-right:0;
-    margin-left:1em;
+  [class*='col-']:last-of-type { /* Remove outside margins */
+    padding-right:0;
   }
 
   .more-below {
     margin-bottom:2rem;
     padding-bottom:2em;
-  }
-}
-
-@media (min-width:70em) {
-  .col-1of3 {
-    max-width:33%; /* At a certain screen size, make this column 33% wide */
-  }
-
-  .col-2of3 {
-    max-width:66%; /* At a certain screen size, make this column 66% wide */
-    flex-grow:2;
   }
 }
