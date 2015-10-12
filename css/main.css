@@ -149,7 +149,7 @@ a:hover, a:focus {
     margin-bottom:0.5em;
   }
 
-  .edit, .delete, .more-info {
+  .submit, .reset, .edit, .delete, .more-info {
     text-align:center;
   }
 }
