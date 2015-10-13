@@ -54,10 +54,25 @@
         </div> -->
 
       <section id="reviews">
-        <div>
-          <h2 class="subheading">Buyer Comments</h2>
-          <div class="img-filler"></div>
-        </div>
+        <div class="grid-container">
+          <div class="col-2of3 more-below-small">
+            <h2 class="subheading">Reviews</h2>
+            <div class="img-filler"></div>
+          </div>
+          <div class="col-1of3">
+            <h2 class="subheading">Leave A Review</h2>
+            <form>
+              <label class="textfield-label" for="input-name">Name</label>
+              <input type="text" class="textfield" placeholder="Name" id="input-name">
+              <label class="textfield-label" for="input-email">Email Address</label>
+              <input type="text" class="textfield" placeholder="Email Address" id="input-email">
+              <label class="textfield-label" for="input-review">Leave A Review</label>
+              <textarea class="textfield" id="input-review" placeholder="Leave A Review"></textarea>
+              <input type="submit" class="button submit" value="Submit form">
+              <input type="reset" class="button reset" value="Clear all">
+            </form>
+          </div>
+        </div> 
       </section>
 
     </div>
