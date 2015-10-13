@@ -104,6 +104,7 @@ span.indent-5 { /* for <span> tags in the <code> tag that need to display indent
 
 a {
   color:#EFA867;
+  text-decoration:none;
   -webkit-transition: color 0.3s ease-out; 
   -moz-transition: color 0.3s ease-out; 
   -o-transition: color 0.3s ease-out; 
@@ -112,7 +113,6 @@ a {
 
 a:hover, a:focus {
   color:#724F33;
-  text-decoration: none;
 }
 
 /* Styling for the navigation button */
@@ -342,29 +342,7 @@ p.product-name { /* The paragraph that holds the product's name */
   transition: color 0.3s ease-out;
 }
 
-p.product-price { /* The paragraph that holds the product's price */
-  color:#515151;
-  font-size:0.9rem;
-  font-family: 'Montserrat', Arial, Verdana, serif;
-  font-weight: bold;
-  margin:0;
-  -webkit-transition: color 0.3s ease-out;
-  -moz-transition: color 0.3s ease-out;
-  transition: color 0.3s ease-out;
-}
-
-p.product-date { /* The paragraph that holds the product's price */
-  color:#515151;
-  font-size:0.9rem;
-  font-family: 'Montserrat', Arial, Verdana, serif;
-  font-weight: bold;
-  margin:0;
-  -webkit-transition: color 0.3s ease-out;
-  -moz-transition: color 0.3s ease-out;
-  transition: color 0.3s ease-out;
-}
-
-p.product-sold { /* The paragraph that holds the product's price */
+p.product-price, p.product-date, p.product-sold { /* The paragraph that holds the product's price, date, and sell numbers */
   color:#515151;
   font-size:0.9rem;
   font-family: 'Montserrat', Arial, Verdana, serif;
@@ -392,7 +370,7 @@ p.product-sold { /* The paragraph that holds the product's price */
   background-color: #EFA867;
 }
 
-.product-listing:hover p.product-name, .product-listing:focus p.product-name, .product-listing:hover p.product-price, .product-listing:focus p.product-price { /*  Setting the price and name to change color on hover/focus */
+.product-listing:hover p.product-name, .product-listing:focus p.product-name, .product-listing:hover p.product-price, .product-listing:focus p.product-price, .product-listing:hover p.product-date, .product-listing:focus p.product-date, .product-listing:hover p.product-sold, .product-listing:focus p.product-sold { /*  Setting the price, selling numbers, date, and name to change color on hover/focus */
   color:#FFF;
 }
 
@@ -461,7 +439,9 @@ nav.fixed-nav-bar { /* The top navigation bar */
   margin-bottom:2rem;
 }
 
-nav.filter-nav-bar { /* The filter navigation bar */
+/* The filter navigation bar */
+/*
+nav.filter-nav-bar { 
   text-align: right;
   width: 100%;
   -webkit-box-shadow: 0 0.25rem 0.25rem 0 rgba(0,0,0,0.25);
@@ -470,6 +450,7 @@ nav.filter-nav-bar { /* The filter navigation bar */
   background-color:#FFF;
   margin-bottom:2rem;
 }
+*/
 
 @media (min-width:56.25em) {
   nav.fixed-nav-bar {
@@ -590,8 +571,9 @@ dl.container {
     margin:0;
   }
 }
+
 /*View individual product*/
-.large-product-image {
+/* .large-product-image {
    display:inline-block;
    width:50%;
    height:30rem;
@@ -605,12 +587,7 @@ dl.container {
    height:30rem;
    float:left;
    padding: 1rem;
-}
-
-input {
-  clear: none;
-  margin: 0.5em auto; 
-}
+}*/
 
 /*Product View Item*/
 
@@ -637,7 +614,7 @@ input {
   margin-left:0;
 }
 
-.product-view .product-price {
+.product-view .product-price, .product-view .product-date, .product-view .product-sold {
   font-size:1.25em;
   font-weight:bold;
 }

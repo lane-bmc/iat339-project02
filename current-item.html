@@ -26,10 +26,46 @@
         </ul>
       </nav>
       <!-- NAVIGATION // -->
-      <h1>Current Style</h1>
 
-      <section>
-        <div class="large-product-image">
+      <section id="current-item">
+
+        <div class="product-view more-below">
+          <div class="placeholder-img-product-view"></div>
+          <h1>Bike T-Shirt</h1>
+          <p class="product-date">Style Ends: December 2015</p>
+          <p class="product-price">$29.99</p>
+          <p>This fun bike t-shirt is made from a 100% bamboo tri-blend, and available in red, black, and white. It's a unisex fit and can be machine-washed and dried without any trouble.</p>
+          <form>
+            <div class="container">
+              <div class="container-item">
+                <label class="textfield-label" for="select-colour">Colour</label>
+                <select id="select-colour" class="textfield">
+                  <option value="red">Red</option>
+                  <option value="black">Black</option>
+                  <option value="white">White</option>
+                </select>
+              </div>
+              <div class="container-item">
+                <label class="textfield-label" for="select-size">Size</label>
+                <select id="select-size" class="textfield">
+                  <option value="extra-small">XS</option>
+                  <option value="small">S</option>
+                  <option value="medium">M</option>
+                  <option value="large">L</option>
+                  <option value="extra-large">XL</option>
+                </select>
+              </div>
+              <div class="container-item">
+                <label class="textfield-label" for="select-quantity">Quantity</label>
+                <input type="text" class="textfield" placeholder="Quantity" id="select-quantity">
+              </div>
+            </div>
+            <input type="submit" class="button submit" value="Add To Cart">
+          </form>
+        </div>
+      </section>
+
+        <!-- <div class="large-product-image">
             <div class="img-filler"></div>
         </div>
         <div class="large-product-infor">
@@ -58,19 +94,14 @@
 
                 <input type="submit" class="button submit" value="Add to Cart">
             </form>
-        </div>
+        </div> -->
 
+      <section id="reviews">
         <div>
-            <h3>Buyer Comments</h3>
-            <div class="img-filler"></div>
-        </div>
-        
+          <h2>Buyer Comments</h2>
+          <div class="img-filler"></div>
+        </div> 
       </section>
-
-      
-      
-
-        <!-- TEMPLATES SECTION // -->
 
     </div>
   </body>
