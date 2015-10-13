@@ -590,6 +590,27 @@ dl.container {
     margin:0;
   }
 }
+/*View individual product*/
+.large-product-image {
+   display:inline-block;
+   width:50%;
+   height:30rem;
+   float:left;
+   padding: 1rem;
+}
+
+.large-product-infor{
+   display:inline-block;
+   width:50%;
+   height:30rem;
+   float:left;
+   padding: 1rem;
+}
+
+input {
+  clear: none;
+  margin: 0.5em auto; 
+}
 
 /*Product View Item*/
 
