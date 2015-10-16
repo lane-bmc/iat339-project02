@@ -701,3 +701,10 @@ dl.container {
 .total {
   color:#0DB3BC;
 }
+
+/* For the map on the about page */
+
+#map {
+  width:100%;
+  height:25em;
+}
