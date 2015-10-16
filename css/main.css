@@ -10,7 +10,7 @@
 body { /* Setting up the main body, and its padding from the inside contents*/
   font-family: 'Hind', Arial, Verdana, sans-serif;
   font-size:100%;
-  padding:17rem 2rem 2rem 2rem; /* Lots of top padding for the smallest view, in which the navbar comes down a lot */
+  padding:20rem 2rem 2rem 2rem; /* Lots of top padding for the smallest view, in which the navbar comes down a lot */
   color:#777;
 }
 
@@ -506,6 +506,13 @@ nav ul li {
 @media (max-width:42.5em) {
   nav ul li {
     width:100%; /* With a smaller screen size, navigation items are stacked on top of each other */
+    padding:0.5em 0;
+    border-bottom:0.1em solid #CCC;
+  }
+
+  nav ul li:last-of-type {
+    border-bottom-style:none;
+    padding:0.5em 0 0 0;
   }
 }
 
