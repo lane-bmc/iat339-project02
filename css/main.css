@@ -686,3 +686,16 @@ dl.container {
     padding-bottom: 0;
   }
 }
+
+/* For the steps not selected in the checkout process */
+.step-not-selected {
+  opacity:0.3;
+}
+
+.subtotal {
+  font-size:1.25rem;
+}
+
+.total {
+  color:#0DB3BC;
+}
