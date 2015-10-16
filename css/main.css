@@ -16,13 +16,13 @@ body { /* Setting up the main body, and its padding from the inside contents*/
 
 @media (min-width:42.51em) {
   body {
-    padding:10rem 2rem 2rem 2rem; /* Top padding gets reduced as the screen size increases */
+    padding:12rem 2rem 2rem 2rem; /* Top padding gets reduced as the screen size increases */
   }
 }
 
 @media (min-width:56.25em) {
   body {
-    padding:6rem 2rem 2rem 2rem; /* Top padding gets reduced as the screen size increases */
+    padding:8rem 2rem 2rem 2rem; /* Top padding gets reduced as the screen size increases */
   }
 }
 
@@ -466,15 +466,14 @@ nav.filter-nav-bar {
   max-height:4em;
   width:auto;
   opacity:1;
-  -webkit-transition: all 0.3s ease-out; 
-  -moz-transition: all 0.3s ease-out; 
-  -o-transition: all 0.3s ease-out; 
-  transition: all 0.3s ease-out;
-}
 }
 
 .img-navbar:hover, .img-navbar:focus { /* When the screen is small, have the logo centered and above the navigation */
   opacity:0.5;
+  -webkit-transition: all 0.3s ease-out; 
+  -moz-transition: all 0.3s ease-out; 
+  -o-transition: all 0.3s ease-out; 
+  transition: all 0.3s ease-out;
 }
 
 @media (min-width:56.25em) { /* With a larger screen, have the logo off to the left and float the navigation to the right */
