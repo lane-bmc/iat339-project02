@@ -690,6 +690,8 @@ dl.container {
 /* For the steps not selected in the checkout process */
 .step-not-selected {
   opacity:0.3;
+  position:relative;
+  z-index:-1;
 }
 
 .subtotal {
