@@ -12,6 +12,7 @@ body { /* Setting up the main body, and its padding from the inside contents*/
   font-size:100%;
   padding:20rem 2rem 2rem 2rem; /* Lots of top padding for the smallest view, in which the navbar comes down a lot */
   color:#777;
+  background-color:#FFF;
 }
 
 @media (min-width:42.51em) {
@@ -714,8 +715,6 @@ dl.container {
 /* Consistent footer across pages */
 footer {
   margin-top:8rem;
-  padding-top:2rem;
-  border-top: 0.1em solid #CCC;
 }
 
 .footer-image {
