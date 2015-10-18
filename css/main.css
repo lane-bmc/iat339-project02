@@ -519,10 +519,15 @@ nav ul li {
 
 /*Shopping Cart Item*/
 
-.placeholder-img-cart-item, .placeholder-img-product-view { /* Placeholder images */
+.placeholder-img-cart-item, .placeholder-img-product-view, .img-product-view { /* Placeholder images */
   width:100%;
   height:15em;
   background-color:#999;
+}
+
+.img-product-view {
+  height:auto;
+  background-color:none;
 }
 
 @media (min-width:35em) { /* Cart item image appears much smaller and off to the left when the screen is larger */
@@ -599,11 +604,15 @@ dl.container {
 /*Product View Item*/
 
 @media (min-width:35em) { /* Product view item image appears smaller and off to the left when the screen is larger */
-  .placeholder-img-product-view {
+  .placeholder-img-product-view, .img-product-view {
     width:30%;
     height:25em;
     float:left;
     margin-right:2em;
+  }
+
+  .img-product-view {
+    height:auto;
   }
 }
 
