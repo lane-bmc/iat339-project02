@@ -710,3 +710,20 @@ dl.container {
   position:relative;
   z-index:-1;
 }
+
+/* Consistent footer across pages */
+footer {
+  margin-top:8rem;
+  padding-top:2rem;
+  border-top: 0.1em solid #CCC;
+}
+
+.footer-image {
+  display:block;
+  margin:0 auto;
+}
+
+footer p {
+  margin-top:1em;
+  text-align:center;
+}
