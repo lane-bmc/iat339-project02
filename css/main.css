@@ -356,6 +356,7 @@ p.product-price, p.product-date, p.product-sold { /* The paragraph that holds th
 
 .product-info { /* The smaller DIV within .product-listing that holds the product's name and price*/
   padding:1rem;
+  text-align:center;
   border-top-style:solid;
   border-color: #CCC;
   border-top-width: 0.1rem;
@@ -662,6 +663,25 @@ dl.container {
   background-color:#999;
 }
 
+.img-team {
+  max-width:100%;
+}
+
+.home-item {
+  max-width:100%;
+  border:0.15em solid #CCC
+}
+
+.home-item img {
+  display:block;
+  max-width:100%;
+  margin:0 auto;
+}
+
+.title-team {
+  margin-bottom:0;
+}
+
 .more-below, .more-below-small { /* Class to be used if there's more content below */
   border-bottom: 0.1em solid #CCC;
   margin-bottom:2rem;
@@ -733,5 +753,9 @@ footer {
 
 footer p {
   margin-top:1em;
+  text-align:center;
+}
+
+.homepage-content {
   text-align:center;
 }
