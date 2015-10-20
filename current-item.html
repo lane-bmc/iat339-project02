@@ -22,7 +22,7 @@
       <nav class="fixed-nav-bar">
         <a href="home.html"><img class="img-navbar" src="img/logo-navbar.png" alt="Fit to a Tee logo."></a>
         <ul>
-          <li><a class="button navlink" href="current-styles.html">Current Styles</li><li><a class="button navlink" href="past-styles.html">Past Styles</a></li><li><a class="button navlink" href="about.html">About</a></li><li><a class="button navlink checkout" href="checkout.html">Checkout (3)</a></li>
+          <li><a class="button navlink" href="current-styles.html">Current Styles</a></li><li><a class="button navlink" href="past-styles.html">Past Styles</a></li><li><a class="button navlink" href="about.html">About</a></li><li><a class="button navlink checkout" href="checkout.html">Checkout (3)</a></li>
         </ul>
       </nav>
       <!-- NAVIGATION // -->
@@ -75,16 +75,47 @@
         <div class="grid-container">
           <div class="col-2of3 more-below-small">
             <h2>Reviews</h2>
-            <div class="img-filler"></div>
+              <article class="more-below">
+                <h3>Peter Tang</h3>
+                <p>
+                  <span class="review-purchase-date">December 14, 2015</span><br/>
+                  <span class="review-rating">5 out of 5</span>
+                </p>
+                <p>Love it! Been getting compliments from my co-workers all week :)</p>
+              </article>
+              <article class="more-below">
+                <h3>Wesley Chan</h3>
+                <p>
+                  <span class="review-purchase-date">December 12, 2015</span><br/>
+                  <span class="review-rating">4 out of 5</span>
+                </p>
+                <p>Loving the shirt quality. Not my favourite design (I really liked the balloon from October) but it's still pretty great!</p>
+              </article>
+              <article>
+                <h3>jimmychu</h3>
+                <p>
+                  <span class="review-purchase-date">December 9, 2015</span><br/>
+                  <span class="review-rating">3 out of 5</span>
+                </p>
+                <p>my first shirt from fit to a tee. looks nice but the small didnt fit me properly. they should have a size guide or something like that</p>
+              </article>
           </div>
           <div class="col-1of3">
             <h2>Leave A Review</h2>
-            <p>All the fields are required, but don't worry! We won't publicly publish any of your information.</p>
+            <p>All the fields are required, but don't worry! We won't publish any of your information anywhere but here.</p>
             <form>
               <label class="textfield-label" for="input-name">Name</label>
               <input type="text" class="textfield" placeholder="Name" id="input-name">
               <label class="textfield-label" for="input-email">Email Address</label>
               <input type="text" class="textfield" placeholder="Email Address" id="input-email">
+              <label class="textfield-label" for="input-rating">Rating (Out of 5)</label>
+              <select id="select-quantity" class="textfield">
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+              </select>
               <label class="textfield-label" for="input-review">Leave A Review</label>
               <textarea class="textfield" id="input-review" placeholder="Review"></textarea>
               <input type="submit" class="button submit" value="Submit form">
