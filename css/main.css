@@ -312,7 +312,8 @@ span.listitem { /* Since both lists employ color attributes to change bullet/num
 
 .product-listing img { /* For images used for product listings */
   max-width:100%;
-  padding:0 1rem;
+  display:block;
+  margin:0 auto;
 }
 
 .product-listing { /* The big DIV that holds all of the product info together */
@@ -324,6 +325,7 @@ span.listitem { /* Since both lists employ color attributes to change bullet/num
   -moz-transition: box-shadow 0.5s ease-out;
   transition: box-shadow 0.5s ease-out;
   margin:0;
+  width:100%;
 }
 
 .product-listing:hover, .product-listing:focus { /* Setting up box-shadow transitions on a hover/focus state */
@@ -376,25 +378,58 @@ p.product-price, p.product-date, p.product-sold { /* The paragraph that holds th
   color:#FFF;
 }
 
-/* Styling for the Flexbox grid elements */
+/*Grid System*/
 
-.container { /* The major flexbox container element - not used for overall grid layout, but for other flexible items */
-  display: -webkit-flex;
-  display: -ms-flex;
-  display: flex;
-  flex-direction: -webkit-row;
-  flex-direction: -ms-row;
-  flex-direction: row;
-  justify-content: -webkit-space-around;
-  justify-content: -ms-space-around;
-  justify-content: space-around;
-  flex-wrap: -webkit-wrap;
-  flex-wrap: -ms-wrap;
-  flex-wrap:wrap;
+.grid-container:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.container-item { /* Individual items within the flexbox container */
-  margin:1rem;
+[class*='col-'] { /* By default (mobile-first) columns are stacked */
+  margin:1em 0;
+}
+
+.img-filler { /* Filler image */
+  max-width:100%;
+  height:25em;
+  background-color:#999;
+}
+
+.more-below, .more-below-small { /* Class to be used if there's more content below (more-below-small only shows up when the screen is very small) */
+  border-bottom: 0.1em solid #CCC;
+  margin-bottom:2rem;
+  padding-bottom:2em;
+}
+
+@media (min-width:50em) {
+  .grid-container { /* Regular grids used for layout grids (flexbox reserved for other kinds of scaling info) */
+    margin-left:-1em;
+    margin-right:-1em;
+  }
+
+  .col-1of3 {
+    width:33.33%; /* At a certain screen size, make the columns 33% and 66% */
+  }
+
+  .col-2of3 {
+    width:66.66%;
+  }
+
+  .col-1of2 {
+    width:50%;
+  }
+
+  [class*='col-'] { /* Remove outside margins */
+    padding:0 1em;
+    float:left;
+  }
+
+  .more-below-small {
+    border-bottom: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 }
 
 /* 
@@ -439,20 +474,8 @@ nav.fixed-nav-bar { /* The top navigation bar */
   right:0;
   background-color:#FFF;
   margin-bottom:2rem;
+  z-index:1;
 }
-
-/* The filter navigation bar */
-/*
-nav.filter-nav-bar { 
-  text-align: right;
-  width: 100%;
-  -webkit-box-shadow: 0 0.25rem 0.25rem 0 rgba(0,0,0,0.25);
-  -moz-box-shadow: 0 0.25rem 0.25rem 0 rgba(0,0,0,0.25);
-  box-shadow: 0 0.25rem 0.25rem 0 rgba(0,0,0,0.25);
-  background-color:#FFF;
-  margin-bottom:2rem;
-}
-*/
 
 @media (min-width:56.25em) {
   nav.fixed-nav-bar {
@@ -518,23 +541,39 @@ nav ul li {
   }
 }
 
-/*Shopping Cart Item*/
+/* Styling for the Flexbox grid elements */
 
-.placeholder-img-cart-item, .placeholder-img-product-view, .img-product-view { /* Placeholder images */
-  width:100%;
-  height:15em;
-  background-color:#999;
+.container { /* The flexbox container element, used for flexible information within a box (e.g. quantity, size, colour in the checkout screen) */
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: -webkit-row;
+  flex-direction: -ms-row;
+  flex-direction: row;
+  justify-content: -webkit-space-around;
+  justify-content: -ms-space-around;
+  justify-content: space-around;
+  flex-wrap: -webkit-wrap;
+  flex-wrap: -ms-wrap;
+  flex-wrap:wrap;
 }
 
-.img-product-view {
+.container-item { /* Individual items within the flexbox container */
+  margin:1rem;
+}
+
+/*Shopping Cart Item*/
+
+.img-cart-view { /* Placeholder images */
+  width:100%;
   height:auto;
   background-color:none;
 }
 
 @media (min-width:35em) { /* Cart item image appears much smaller and off to the left when the screen is larger */
-  .placeholder-img-cart-item {
+  .img-cart-view{
     width:10em;
-    height:10em;
+    height:auto;
     float:left;
   }
 }
@@ -585,34 +624,19 @@ dl.container {
   }
 }
 
-/*View individual product*/
-/* .large-product-image {
-   display:inline-block;
-   width:50%;
-   height:30rem;
-   float:left;
-   padding: 1rem;
+/*Product View Item on the Current Styles and Past Styles pages*/
+
+.img-product-view {
+  max-width:100%;
+  display:block;
+  margin:0 auto;
 }
 
-.large-product-infor{
-   display:inline-block;
-   width:50%;
-   height:30rem;
-   float:left;
-   padding: 1rem;
-}*/
-
-/*Product View Item*/
-
-@media (min-width:35em) { /* Product view item image appears smaller and off to the left when the screen is larger */
-  .placeholder-img-product-view, .img-product-view {
+@media (min-width:45.625em) { /* Product view item image appears smaller and off to the left when the screen is larger */
+  .img-product-view {
     width:30%;
-    height:25em;
     float:left;
     margin-right:2em;
-  }
-
-  .img-product-view {
     height:auto;
   }
 }
@@ -621,7 +645,7 @@ dl.container {
   margin-bottom:1em;
 }
 
-.product-view .container {
+.product-view .container { /* Flexbox items in the product view are left-aligned, not centered */
   justify-content:-webkit-flex-start;
   justify-content:-ms-flex-start;
   justify-content:flex-start;
@@ -631,7 +655,7 @@ dl.container {
   margin-left:0;
 }
 
-.product-view .product-price, .product-view .product-date, .product-view .product-sold {
+.product-view .product-price, .product-view .product-date, .product-view .product-sold { /* These also appear in the product-listing divs on the past styles page - they're styled differently here */
   font-size:1.25em;
   font-weight:bold;
 }
@@ -640,90 +664,12 @@ dl.container {
   display:inline-block;
 }
 
-/*Grid System*/
-
-.grid-container { /* Regular grids used for layout grids (flexbox reserved for other kinds of scaling info) */
-  width:100%;
-}
-
-.grid-container:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-[class*='col-'] { /* By default (mobile-first) columns are stacked */
-  width:100%;
-  margin:1em 0;
-}
-
-.img-filler { /* Filler image in the two-column setup */
-  max-width:100%;
-  height:25em;
-  background-color:#999;
-}
-
-.img-team {
-  max-width:100%;
-}
-
-.home-item {
-  max-width:100%;
-  border:0.15em solid #CCC
-}
-
-.home-item img {
-  display:block;
-  max-width:100%;
-  margin:0 auto;
-}
-
-.title-team {
-  margin-bottom:0;
-}
-
-.more-below, .more-below-small { /* Class to be used if there's more content below */
-  border-bottom: 0.1em solid #CCC;
-  margin-bottom:2rem;
-  padding-bottom:2em;
-}
-
-@media (min-width:50em) {
-  .col-1of3 {
-    width:33.33%; /* At a certain screen size, make the columns 33% and 66% */
-  }
-
-  .col-2of3 {
-    width:66.66%;
-  }
-
-  .col-1of2 {
-    width:50%;
-  }
-
-  [class*='col-'] { /* Remove outside margins */
-    padding-right:2em;
-    float:left;
-  }
-
-  [class*='col-']:last-of-type { /* Remove outside margins */
-    padding-right:0;
-  }
-
-  .more-below-small {
-    border-bottom: 0;
-    margin-bottom: 0;
-    padding-bottom: 0;
-  }
-}
-
 /* For the steps not selected in the checkout process */
 .step-not-selected {
-  opacity:0.3;
-  position:relative;
-  z-index:-1;
+  color:#B6E8EB;
 }
 
+/* Subtotal and total price classes for paragraph tags */
 .subtotal {
   font-size:1.25rem;
 }
@@ -733,12 +679,9 @@ dl.container {
 }
 
 /* For the map on the about page */
-
 #map {
   width:100%;
   height:25em;
-  position:relative;
-  z-index:-1;
 }
 
 /* Consistent footer across pages */
@@ -756,6 +699,16 @@ footer p {
   text-align:center;
 }
 
+/* Content that is at the very top of the homepage */
 .homepage-content {
   text-align:center;
+}
+
+/* Image and title classes for team profiles */
+.img-team {
+  max-width:100%;
+}
+
+.title-team {
+  margin-bottom:0;
 }
