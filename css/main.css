@@ -700,8 +700,33 @@ footer p {
 }
 
 /* Content that is at the very top of the homepage */
+
 .homepage-content {
   text-align:center;
+  background-color:#0DB3BC;
+  padding:10em 2em 2em 2em;
+  margin:-10em -2em 0 -2em;
+}
+
+@media (min-width:42.51em) {
+  .homepage-content {
+    padding:15em 2em 10em 2em;
+  }
+}
+
+.homepage-content h1, .homepage-content p {
+  color:#FFF;
+}
+
+.homepage-content .button.submit, .homepage-content .button.submit {
+  border-color:#FFF;
+  color:#FFF;
+  background-color:#0DB3BC;
+}
+
+.homepage-content .button.submit:hover, .homepage-content .button.submit:focus {
+  background-color:#FFF;
+  color:#0DB3BC;
 }
 
 /* Image and title classes for team profiles */
@@ -721,4 +746,11 @@ article h3 {
 
 .review-purchase-date, .review-rating {
   font-weight:bold;
+}
+
+/* Company Updates */
+
+.updates-date {
+  font-weight:bold;
+  margin-top:-1.5em;
 }
