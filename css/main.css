@@ -672,6 +672,10 @@ dl.container {
 /* Subtotal and total price classes for paragraph tags */
 .subtotal {
   font-size:1.25rem;
+}
+
+.subtotal-checkout {
+  font-size:1.25rem;
   text-align: right;
   padding-right: 1rem;
 }
