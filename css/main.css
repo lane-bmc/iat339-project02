@@ -345,6 +345,10 @@ p.product-name { /* The paragraph that holds the product's name */
   transition: color 0.3s ease-out;
 }
 
+p.subheading{
+  font-size:1.2rem;
+}
+
 p.product-price, p.product-date, p.product-sold { /* The paragraph that holds the product's price, date, and sell numbers */
   color:#515151;
   font-size:0.9rem;
