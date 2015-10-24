@@ -3,48 +3,6 @@
   Styling for the Fit to a Tee's website
 */
 
-/* Font embeds */
-
-@font-face {
-  font-family: 'Hind';
-  font-weight: normal;
-  font-style: normal;
-  src: url('fonts/Hind-Regular.eot');
-  src: url('fonts/Hind-Regular.eot?#iefix') format('embedded-opentype'), 
-       url('fonts/Hind-Regular.woff') format('woff'),
-       url('fonts/Hind-Regular.ttf.svg#Hind-Regular') format('svg');
-}
-
-@font-face {
-  font-family: 'Hind';
-  font-weight: bold;
-  font-style: normal;
-  src: url('fonts/Hind-Semibold.eot');
-  src: url('fonts/Hind-Semibold.eot?#iefix') format('embedded-opentype'),
-       url('fonts/Hind-Semibold.woff') format('woff'),
-       url('fonts/Hind-Semibold.ttf.svg#Hind-Semibold') format('svg');
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-weight: normal;
-  font-style: normal;
-  src: url('fonts/Montserrat-Regular.eot');
-  src: url('fonts/Montserrat-Regular.eot?#iefix') format('embedded-opentype'), 
-       url('fonts/Montserrat-Regular.woff') format('woff'),
-       url('fonts/Montserrat-Regular.ttf.svg#Hind-Semibold') format('svg');
-}
-
-@font-face {
-  font-family: 'Montserrat';
-  font-weight: bold;
-  font-style: normal;
-  src: url('fonts/Montserrat-Bold.eot');
-  src: url('fonts/Montserrat-Bold.eot?#iefix') format('embedded-opentype'),
-       url('fonts/Montserrat-Bold.woff') format('woff'),
-       url('fonts/Montserrat-Bold.ttf.svg#Hind-Semibold') format('svg');
-}
-
 /* Some basic styling */
 
 *, *::before, *::after {
