@@ -17,7 +17,7 @@ function initialize() {
     '<p><b>Fit To A Tee</b> is a Vancouver-based t-shirt company ' +
     'that makes limited edition, short run, one of a kind t-shirts.</p>' +
     '<div class="vcard">' +
-    '<p class="fn"><a class="url" href="home.html">Fit To A Tee</a></p>' +
+    '<p class="fn"><a class="url" href="index.html">Fit To A Tee</a></p>' +
     '<p class="adr">'+
       '<span class="street-address">125 Main Street</span><br>' +
       '<span class="region">Vancouver, BC</span><br>' +
