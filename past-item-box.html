@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fit to a Tee</title>
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Hind:400,600' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="wrapper"> <!-- // DIV that wraps around the whole document -->
+
+
+      <!-- // NAVIGATION -->
+      <nav class="fixed-nav-bar">
+        <a href="index.html"><img class="img-navbar" src="img/logo-navbar.png" alt="Fit to a Tee logo."></a>
+        <ul>
+          <li><a class="button navlink" href="current-styles.html">Current Styles</a></li><li><a class="button navlink" href="past-styles.html">Past Styles</a></li><li><a class="button navlink" href="about.html">About</a></li><li><a class="button navlink checkout" href="checkout.html">Checkout (3)</a></li>
+        </ul>
+      </nav>
+      <!-- NAVIGATION // -->
+
+      <section id="current-item">
+
+        <div class="product-view more-below">
+          <img src="img/tshirt-box.png" alt="T-shirt with a gift box on the front." class="img-product-view">
+          <h1>Gift Box T-Shirt</h1>
+          <p class="product-date">This style ran until September 30, 2015.</p>
+          <p>This gift box t-shirt is made from a 100% bamboo tri-blend, and available in black, yellow, and white. It's a unisex fit and can be machine-washed and dried without any trouble.</p>
+          
+        </div>
+      </section>
+
+      <section id="reviews">
+        <div class="grid-container">
+          <div class="col-2of3 more-below-small">
+            <h2>Reviews</h2>
+            <article class="more-below">
+              <h3>Kenny</h3>
+              <p>
+                <span class="review-purchase-date">September 17, 2015</span><br/>
+                <span class="review-rating">3 out of 5</span>
+              </p>
+              <p>The medium doesn't fit great, a bit baggy overall. Would like a more fitted cut.</p>
+            </article>
+            <article class="more-below">
+              <h3>Christie Wong</h3>
+              <p>
+                <span class="review-purchase-date">September 12, 2015</span><br/>
+                <span class="review-rating">1 out of 5</span>
+              </p>
+              <p>Took almost 3 weeks to arrive, and customer service was terrible. Great shirt, but don't think I'll be doing business with them again.</p>
+            </article>
+            <article class="more-below">
+              <h3>Peter Tang</h3>
+              <p>
+                <span class="review-purchase-date">September 3, 2015</span><br/>
+                <span class="review-rating">5 out of 5</span>
+              </p>
+              <p>Been buying from Fit To A Tee for over a year, and they still haven't let me down. Another great style!</p>
+            </article>
+            <article>
+              <h3>j.goh</h3>
+              <p>
+                <span class="review-purchase-date">September 2, 2015</span><br/>
+                <span class="review-rating">5 out of 5</span>
+              </p>
+              <p>Awesome! :D</p>
+            </article>
+          </div>
+          <div class="col-1of3">
+            <h2>Leave A Review</h2>
+            <p>All the fields are required, but don't worry! We won't publish any of your information anywhere but here.</p>
+            <form>
+              <label class="textfield-label" for="input-name">Name</label>
+              <input type="text" class="textfield" placeholder="Name" id="input-name">
+              <label class="textfield-label" for="input-email">Email Address</label>
+              <input type="text" class="textfield" placeholder="Email Address" id="input-email">
+              <label class="textfield-label" for="input-rating">Rating (Out of 5)</label>
+              <select id="select-quantity" class="textfield">
+                <option value="5">5</option>
+                <option value="4">4</option>
+                <option value="3">3</option>
+                <option value="2">2</option>
+                <option value="1">1</option>
+              </select>
+              <label class="textfield-label" for="input-review">Leave A Review</label>
+              <textarea class="textfield" id="input-review" placeholder="Review"></textarea>
+              <input type="submit" class="button submit" value="Submit form">
+              <input type="reset" class="button reset" value="Clear all">
+            </form>
+          </div>
+        </div> 
+      </section>
+      <footer>
+        <img class="footer-image" src="img/logo-footer.png" alt="Fit To A Tee logomark, with a diagonally striped t-shirt inside a circle.">
+        <div class="vcard">
+          <p> <span class="fn"><strong>&copy;2015 Fit To A Tee</strong></span><br/>
+          <span class="adr"><span class="street-address">125 Main Street</span>, <span class="region">Vancouver, BC</span>, <span class="postal-code">V9W 5O8</span></span></p>
+          <p><span class="tel">(604) 271 9202</span><br/>
+          <spanp class="email"><a href="mailto:info@fittoatee.com">info@fittoatee.com</a></span></p>
+          <p>Brendan Lane and Shengting Hu</p>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
