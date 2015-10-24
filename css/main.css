@@ -132,7 +132,7 @@ a:hover, a:focus {
 }
 
 .navlink { /* Buttons found in the main navigation (<nav> tag) */
-  font-size: 1em;
+  font-size: 1rem;
   padding: 0.3em 0.6em;
   margin:0;
 }
@@ -160,7 +160,7 @@ a:hover, a:focus {
   border-style:solid;
   border-color:#EFA867;
   border-width:0.15em;
-  font-size: 1.25em; 
+  font-size: 1.25rem; 
   padding: 0.3em;
 }
 
@@ -168,7 +168,7 @@ a:hover, a:focus {
   border-style:solid;
   border-color:#999;
   border-width:0.15em;
-  font-size: 1.25em;
+  font-size: 1.25rem;
   padding: 0.3em;
 }
 
@@ -188,7 +188,7 @@ a:hover, a:focus {
   display:block;
   font-weight:bold;
   color:#0DB3BC;
-  font-size:1.25em;
+  font-size:1.25rem;
 }
 
 .textfield { /* For bordered form elements including textarea, text input, and <select> */
@@ -199,7 +199,7 @@ a:hover, a:focus {
   width:100%; /* When screen size is small, have the fields span the width of the screen */
   margin-bottom:1em;
   display:block;
-  font-size:1em;
+  font-size:1rem;
 }
 
 textarea { /* Ensure that the textarea is big enough and that it doesn't somehow expand beyond the bounds of the screen */
@@ -267,6 +267,10 @@ section h2 { /* Specifically for the <h2> tag as the rendered element */
 
 section h2.subheading { /* Styling specifically for the subheadings (e.g. the <h2> tags that actually act as subheadings, and not the one being rendered as an example element) */
   margin:3em 0 0.5em 0;
+}
+
+p.subheading { /* Styling specifically for the paragraph text that shows up right beneath <h1> tags */
+  font-size:1.2rem;
 }
 
 section h3 {
@@ -345,11 +349,7 @@ p.product-name { /* The paragraph that holds the product's name */
   transition: color 0.3s ease-out;
 }
 
-p.subheading{
-  font-size:1.2rem;
-}
-
-p.product-price, p.product-date, p.product-sold { /* The paragraph that holds the product's price, date, and sell numbers */
+p.product-price, p.product-date { /* The paragraph that holds the product's price and date */
   color:#515151;
   font-size:0.9rem;
   font-family: 'Montserrat', Arial, Verdana, serif;
@@ -378,7 +378,7 @@ p.product-price, p.product-date, p.product-sold { /* The paragraph that holds th
   background-color: #EFA867;
 }
 
-.product-listing:hover p.product-name, .product-listing:focus p.product-name, .product-listing:hover p.product-price, .product-listing:focus p.product-price, .product-listing:hover p.product-date, .product-listing:focus p.product-date, .product-listing:hover p.product-sold, .product-listing:focus p.product-sold { /*  Setting the price, selling numbers, date, and name to change color on hover/focus */
+.product-listing:hover p.product-name, .product-listing:focus p.product-name, .product-listing:hover p.product-price, .product-listing:focus p.product-price, .product-listing:hover p.product-date, .product-listing:focus p.product-date { /*  Setting the price, date, and name to change color on hover/focus */
   color:#FFF;
 }
 
@@ -588,6 +588,24 @@ nav ul li {
   margin-bottom:1em;
 }
 
+/* Subtotal and total price classes for paragraph tags */
+
+.subtotal-checkout {
+  font-size:1.25rem;
+  text-align:left;
+  padding-right:1em;
+}
+
+.total {
+  color:#0DB3BC;
+}
+
+@media (min-width:35em) { /* Cart item image appears much smaller and off to the left when the screen is larger */
+  .subtotal-checkout{
+    text-align:right;
+  }
+}
+
 /* Description list that contains product info */
 
 dd {
@@ -600,7 +618,7 @@ dt {
 }
 
 dd, dt {
-  font-size:1.25em;
+  font-size:1.25rem;
 }
 
 .cart-item {
@@ -659,8 +677,8 @@ dl.container {
   margin-left:0;
 }
 
-.product-view .product-price, .product-view .product-date, .product-view .product-sold { /* These also appear in the product-listing divs on the past styles page - they're styled differently here */
-  font-size:1.25em;
+.product-view .product-price, .product-view .product-date { /* These also appear in the product-listing divs on the past styles page - they're styled differently here */
+  font-size:1.25rem;
   font-weight:bold;
 }
 
@@ -671,21 +689,6 @@ dl.container {
 /* For the steps not selected in the checkout process */
 .step-not-selected {
   color:#B6E8EB;
-}
-
-/* Subtotal and total price classes for paragraph tags */
-.subtotal {
-  font-size:1.25rem;
-}
-
-.subtotal-checkout {
-  font-size:1.25rem;
-  text-align: right;
-  padding-right: 1rem;
-}
-
-.total {
-  color:#0DB3BC;
 }
 
 /* For the map on the about page */
