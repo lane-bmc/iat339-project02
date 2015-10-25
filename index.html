@@ -20,7 +20,7 @@
       <nav class="fixed-nav-bar">
         <a href="index.html"><img class="img-navbar" src="img/logo-navbar.png" alt="Fit to a Tee logo."></a>
         <ul>
-          <li><a class="button navlink" href="current-styles.html">Current Styles</a></li><li><a class="button navlink" href="past-styles.html">Past Styles</a></li><li><a class="button navlink" href="about.html">About</a></li><li><a class="button navlink checkout" href="checkout.html">Checkout (3)</a></li>
+          <li><a class="button navlink" href="current-styles.html">Current Styles</a></li><li><a class="button navlink" href="discontinued-styles.html">Discontinued Styles</a></li><li><a class="button navlink" href="about.html">About</a></li><li><a class="button navlink checkout" href="checkout.html">Checkout (3)</a></li>
         </ul>
       </nav>
       <!-- NAVIGATION // -->
@@ -38,7 +38,13 @@
     <div class="wrapper"> <!-- // DIV that wraps around the whole document -->
 
       <section id="current-styles" class="more-below">
+
       <h2 class="subheading">Current Styles</h2>
+      <p class="subheading">These styles only run until <strong>October 31, 2015</strong>, so get them while you can!</p>
+
+      <div id="countdown">
+        <p class="days">00</p><p class="timeRefDays">days</p><p class="hours">00</p><p class="timeRefHours">hours</p><p class="minutes">00</p><p class="timeRefMinutes">minutes</p><p class="seconds">00</p><p class="timeRefSeconds">seconds</p>
+      </div>
 
         <div class="grid-container">
           <figure class="col-1of3"><a href="current-item-bike.html">
@@ -72,11 +78,12 @@
         <a class="button more-info" href="current-styles.html">More Current Styles</a>
       </section>
 
-      <section id="past-styles" class="more-below">
-      <h2 class="subheading">Past Styles</h2>
+      <section id="discontinued-styles" class="more-below">
+      <h2 class="subheading">Discontinued Styles</h2>
+      <p class="subheading">These are styles that ran over the past three months. You can't buy them anymore, but you can check them out and see how you like our work!</p>
 
         <div class="grid-container">
-          <figure class="col-1of3"><a href="past-item-box.html">
+          <figure class="col-1of3"><a href="discontinued-item-box.html">
             <div class="product-listing">
               <img src="img/tshirt-box.png" alt="T-shirt with a gift box on the front. ">
               <figcaption class="product-info">
@@ -85,7 +92,7 @@
               </figcaption>
             </div></a>
           </figure>
-          <figure class="col-1of3"><a href="past-item-balloon.html">
+          <figure class="col-1of3"><a href="discontinued-item-balloon.html">
             <div class="product-listing">
               <img src="img/tshirt-balloon.png" alt="T-shirt with a ballon on the front. ">
               <figcaption class="product-info">
@@ -94,7 +101,7 @@
               </figcaption>
             </div></a>
           </figure>
-          <figure class="col-1of3"><a href="past-item-box.html">
+          <figure class="col-1of3"><a href="discontinued-item-box.html">
             <div class="product-listing">
               <img src="img/tshirt-cake.png" alt="T-shirt with a cake on the front.">
               <figcaption class="product-info">
@@ -104,7 +111,7 @@
             </div></a>
           </figure>
         </div>
-        <a class="button more-info" href="past-styles.html">More Past Styles</a>
+        <a class="button more-info" href="discontinued-styles.html">More Discontinued Styles</a>
       </section>
 
       <section id="updates">
@@ -142,5 +149,9 @@
       </footer>
 
     </div>
+
+    <!-- Run the scripts only at the end, after loading the page -->
+    <script src="js/jquery.js"></script>
+    <script src="js/countdown.js"></script>
   </body>
 </html>

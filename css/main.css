@@ -656,7 +656,7 @@ dl.container {
   }
 }
 
-/*Product View Item on the Current Styles and Past Styles pages*/
+/*Product View Item on the Current Styles and Discontinued Styles pages*/
 
 .img-product-view {
   max-width:100%;
@@ -687,7 +687,7 @@ dl.container {
   margin-left:0;
 }
 
-.product-view .product-price, .product-view .product-date { /* These also appear in the product-listing divs on the past styles page - they're styled differently here */
+.product-view .product-price, .product-view .product-date { /* These also appear in the product-listing divs on the discontinued styles page - they're styled differently here */
   font-size:1.25rem;
   font-weight:bold;
 }
@@ -706,6 +706,17 @@ dl.container {
   width:100%;
   height:25em;
   background: url(../img/location-map.png) no-repeat center;
+}
+
+/* For the countdown */
+#countdown p {
+  display:inline-block;
+  padding:0.5rem;
+  background:#0DB3BC;
+  color:#FFF;
+  font-size:1.5rem;
+  font-weight:bold;
+  margin:0;
 }
 
 /* Consistent footer across pages */

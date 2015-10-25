@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -22,7 +23,7 @@
       <nav class="fixed-nav-bar">
         <a href="index.html"><img class="img-navbar" src="img/logo-navbar.png" alt="Fit to a Tee logo."></a>
         <ul>
-          <li><a class="button navlink" href="current-styles.html">Current Styles</a></li><li><a class="button navlink" href="past-styles.html">Past Styles</a></li><li><a class="button navlink" href="about.html">About</a></li><li><a class="button navlink checkout" href="checkout.html">Checkout (3)</a></li>
+          <li><a class="button navlink" href="current-styles.html">Current Styles</a></li><li><a class="button navlink" href="discontinued-styles.html">Discontinued Styles</a></li><li><a class="button navlink" href="about.html">About</a></li><li><a class="button navlink checkout" href="checkout.html">Checkout (3)</a></li>
         </ul>
       </nav>
       <!-- NAVIGATION // -->
@@ -32,6 +33,9 @@
         <div class="product-view more-below">
           <img src="img/tshirt-bike.png" alt="T-shirt with a bike on the front. The bike has people standing on its seat." class="img-product-view">
           <h1>Bike T-Shirt</h1>
+          <div id="countdown">
+            <p class="days">00</p><p class="timeRefDays">days</p><p class="hours">00</p><p class="timeRefHours">hours</p><p class="minutes">00</p><p class="timeRefMinutes">minutes</p><p class="seconds">00</p><p class="timeRefSeconds">seconds</p>
+          </div>
           <p class="product-date">This style only runs until October 31, 2015!</p>
           <p class="product-price">$29.99</p>
           <p>This fun bike t-shirt is made from a 100% bamboo tri-blend, and available in blue, black, and white. It's a unisex fit and can be machine-washed and dried without any trouble.</p>
@@ -136,5 +140,9 @@
       </footer>
 
     </div>
+
+    <!-- Run the scripts only at the end, after loading the page -->
+    <script src="js/jquery.js"></script>
+    <script src="js/countdown.js"></script>
   </body>
 </html>
