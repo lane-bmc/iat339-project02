@@ -20,7 +20,8 @@
       <!-- // NAVIGATION -->
       <nav class="fixed-nav-bar">
         <a href="index.html"><img class="img-navbar" src="img/logo-navbar.png" alt="Fit to a Tee logo."></a>
-        <ul>
+        <a class="nav-toggle hidden" href="#">MENU</a>
+        <ul class="nav-mobile-hidden">
           <li><a class="button navlink" href="current-styles.html">Current Styles</a></li><li><a class="button navlink" href="discontinued-styles.html">Discontinued Styles</a></li><li><a class="button navlink" href="about.html">About</a></li><li><a class="button navlink checkout" href="checkout.html">Checkout (3)</a></li>
         </ul>
       </nav>
@@ -181,5 +182,12 @@
       </footer>
 
     </div>
+    <!-- Run the scripts only at the end, after loading the page -->
+    <!-- 
+      HTML5shiv allows IE below version 9 to work with HTML5 elements.
+    -->
+    <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+    <script src="js/jquery.js"></script>
+    <script src="js/mobilemenu.js"></script>
   </body>
 </html>
