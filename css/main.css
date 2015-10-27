@@ -14,7 +14,16 @@ body { /* Setting up the main body, and its padding from the inside contents*/
   font-size:100%;
   color:#777;
   background-color:#FFF;
-  padding:8em 2em 2em 2em; /* Top padding gets reduced if the menu is collapsed */
+  padding:20em 2em 2em 2em; /* Top padding gets reduced if the menu is collapsed */
+}
+@media (max-width:42.5em) {
+  body.mobile-shown {
+    padding:20em 2em 2em 2em; /* Top padding gets reduced if the menu is collapsed */
+  }
+
+  body.mobile-hidden {
+    padding:8em 2em 2em 2em; /* Top padding gets reduced if the menu is collapsed */
+  }
 }
 
 @media (min-width:42.51em) {
@@ -576,10 +585,6 @@ nav ul li {
   .img-navbar {
     margin-left:1em;
     float:left;
-  }
-
-  nav.fixed-nav-bar {
-    position:fixed;
   }
 }
 
