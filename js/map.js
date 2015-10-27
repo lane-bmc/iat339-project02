@@ -1,3 +1,5 @@
+/* Javascript for inserting Google's Map API into the .map div. If the JS doesn't load, a map image is provided as a fallback in the HTML. */
+
 function initialize() {
 	var myLatLng = {lat: 49.28367, lng: -123.09982};
 

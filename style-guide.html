@@ -589,6 +589,69 @@
             </div>
         </section>
 
+        <section>
+          <h3>Checkout Step Indicator</h3>
+
+            <h4>CSS selector:</h4>
+            <p>.step-not-selected</p>
+
+            <h4>Sample code:</h4>
+            <code>&lt;h1&gt;Checkout &lt;span class="step-not-selected"&gt;/ Review / Confirm&lt;/span&gt;&lt;/h1&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <h1>Checkout <span class="step-not-selected">/ Review / Confirm</span></h1>
+
+        </section>
+
+        <section>
+          <h3>Countdown Timer</h3>
+
+            <h4>CSS selector:</h4>
+            <p>#countdown</p>
+
+            <h4>Sample code:</h4>
+            <code>&lt;div id="countdown"&gt;<br/>
+              <span class="indent">&lt;p class="days"&gt;00&lt;/p&gt;&lt;p class="timeRefDays"&gt;days&lt;/p&gt;&lt;p class="hours"&gt;00&lt;/p&gt;&lt;p class="timeRefHours"&gt;hours&lt;/p&gt;&lt;p class="minutes"&gt;00&lt;/p&gt;&lt;p class="timeRefMinutes"&gt;minutes&lt;/p&gt;&lt;p class="seconds"&gt;00&lt;/p&gt;&lt;p class="timeRefSeconds"&gt;seconds&lt;/p&gt;</span><br/>
+            &lt;/div&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <div id="countdown">
+              <p class="days">00</p><p class="timeRefDays">days</p><p class="hours">00</p><p class="timeRefHours">hours</p><p class="minutes">00</p><p class="timeRefMinutes">minutes</p><p class="seconds">00</p><p class="timeRefSeconds">seconds</p>
+            </div>
+
+            <h4>Note on code:</h4>
+            <p>This element uses JavaScript. On fallback, everything reverts to zeroes.</p>
+
+        </section>
+
+        <section>
+          <h3>Review</h3>
+
+            <h4>CSS selector:</h4>
+            <p>article</p>
+
+            <h4>Sample code:</h4>
+            <code>&lt;article class="more-below"&gt;<br/>
+              <span class="indent">&lt;h3&gt;Kenny&lt;/h3&gt;</span><br/>
+              <span class="indent">&lt;p&gt;</span><br/>
+                <span class="indent-2">&lt;span class="review-purchase-date"&gt;September 17, 2015&lt;/span&gt;&lt;br/&gt;</span><br/>
+                <span class="indent-2">&lt;span class="review-rating"&gt;3 out of 5&lt;/span&gt;</span><br/>
+              <span class="indent">&lt;/p&gt;</span><br/>
+              <span class="indent">&lt;p&gt;The medium doesn't fit great, a bit baggy overall. Would like a more fitted cut.&lt;/p&gt;</span><br/>
+            &lt;/article&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <article class="more-below">
+              <h3>Kenny</h3>
+              <p>
+                <span class="review-purchase-date">September 17, 2015</span><br/>
+                <span class="review-rating">3 out of 5</span>
+              </p>
+              <p>The medium doesn't fit great, a bit baggy overall. Would like a more fitted cut.</p>
+            </article>
+
+        </section>
+
       </section>
 
       <!-- TEMPLATES SECTION // -->
@@ -600,7 +663,7 @@
           <p> <span class="fn"><strong>&copy;2015 Fit To A Tee</strong></span><br/>
           <span class="adr"><span class="street-address">125 Main Street</span>, <span class="region">Vancouver, BC</span>, <span class="postal-code">V9W 5O8</span></span></p>
           <p><span class="tel">(604) 271 9202</span><br/>
-          <spanp class="email"><a href="mailto:info@fittoatee.com">info@fittoatee.com</a></span></p>
+          <span class="email"><a href="mailto:info@fittoatee.com">info@fittoatee.com</a></span></p>
           <p>Brendan Lane and Shengting Hu</p>
         </div>
       </footer>
@@ -613,7 +676,8 @@
     -->
     <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
     <script src="js/jquery.js"></script>
+    <script src="js/countdown.js"></script>
     <script src="js/mobilemenu.js"></script>
-    
+
   </body>
 </html>

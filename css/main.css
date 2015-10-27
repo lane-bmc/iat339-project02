@@ -16,6 +16,7 @@ body { /* Setting up the main body, and its padding from the inside contents*/
   background-color:#FFF;
   padding:20em 2em 2em 2em; /* Top padding gets reduced if the menu is collapsed */
 }
+
 @media (max-width:42.5em) {
   body.mobile-shown {
     padding:20em 2em 2em 2em; /* Top padding gets reduced if the menu is collapsed */
@@ -481,7 +482,7 @@ cite {
 }
 
 /* 
-  TEMPLATES
+  TEMPLATES ----------------------
 */
 
 /*Navigation Bar*/
@@ -734,14 +735,7 @@ dl.container {
   color:#B6E8EB;
 }
 
-/* For the map on the about page */
-#map {
-  width:100%;
-  height:25em;
-  background: url(../img/location-map.png) no-repeat center;
-}
-
-/* For the countdown */
+/* Hook class for the countdown */
 #countdown p {
   display:inline-block;
   padding:0 0.5rem;
@@ -752,12 +746,25 @@ dl.container {
   margin:0;
 }
 
+
+
+/* 
+  OTHER ----------------------
+*/
+
+/* For the map on the about page */
+#map {
+  width:100%;
+  height:25em;
+  background: url(../img/location-map.png) no-repeat center;
+}
+
 /* Consistent footer across pages */
 footer {
   margin-top:8em;
 }
 
-.footer-image {
+.footer-image { /* The logo image in the footer */
   display:block;
   margin:0 auto;
 }
@@ -769,7 +776,7 @@ footer p {
 
 /* Content that is at the very top of the homepage */
 
-.homepage-content {
+.homepage-content { /* The large header on the homepage */
   text-align:center;
   background-color:#0DB3BC;
   background: url(../img/tshirt-models-header.jpg) no-repeat center center fixed; 
@@ -781,17 +788,17 @@ footer p {
   margin:-10em -2em 0 -2em;
 }
 
-@media (min-width:42.51em) {
+@media (min-width:42.51em) { /* Increase the padding if the screen is larger */
   .homepage-content {
     padding:15em 2em 10em 2em;
   }
 }
 
-.homepage-content h1, .homepage-content p {
+.homepage-content h1, .homepage-content p { /* Change the text to white so that it shows up above the header image */
   color:#FFF;
 }
 
-.homepage-content .button.submit, .homepage-content .button.submit {
+.homepage-content .button.submit, .homepage-content .button.submit { /* Change the button to white so that it shows up above the header image */
   border-color:#FFF;
   color:#FFF;
   background-color:rgba(0, 0, 0, 0);
@@ -813,17 +820,17 @@ footer p {
 
 /* Reviews */
 
-article h3 {
+article h3 { /* The name of the reviewer */
   margin-bottom:0;
 }
 
-.review-purchase-date, .review-rating {
+.review-purchase-date, .review-rating { /* The date of the review and the rating it received */
   font-weight:bold;
 }
 
 /* Company Updates */
 
-.updates-date {
+.updates-date { /* Styling for the dates in each update post on the company update page */
   font-weight:bold;
   margin-top:-1.5em;
 }
