@@ -27,15 +27,18 @@
       </nav>
       <!-- NAVIGATION // -->
 
+      <!-- Tell the user what step of the purchasing process they're on -->
       <h1>Checkout <span class="step-not-selected">/ Review / Confirm</span></h1>
       <p class="subheading">Review your items, and let us know how you'd like us to ship them to you and charge you for them.</p>
 
-      <section id="current-styles">
+      <!-- My Items -->
+      <section id="my-items">
       <h2 class="subheading more-below">My Items</h2>
+
         <div class="cart-item more-below">
           <h3>Bike T-Shirt</h3>
           <div class="cart-item-box">
-            <img class="img-cart-view" src="img/tshirt-bike.png" alt="">
+            <img class="img-cart-view" src="img/tshirt-bike.png" alt="Blue t-shirt with a bike on the front. The bike has people standing on its seat.">
             <dl class="container">
               <div class="container-item">
                 <dt>Colour</dt>
@@ -62,7 +65,7 @@
         <div class="cart-item more-below">
           <h3>Mountain T-Shirt</h3>
           <div class="cart-item-box">
-            <img class="img-cart-view" src="img/tshirt-mountain.png">
+            <img class="img-cart-view" src="img/tshirt-mountain.png" alt="Green t-shirt with two mountains on the front. The tall mountain is thinking about food.">
             <dl class="container">
               <div class="container-item">
                 <dt>Colour</dt>
@@ -89,7 +92,7 @@
         <div class="cart-item more-below">
           <h3>Picnic T-Shirt</h3>
           <div class="cart-item-box">
-            <img class="img-cart-view" src="img/tshirt-picnic.png">
+            <img class="img-cart-view" src="img/tshirt-picnic.png" alt="Yellow t-shirt with a picnic basket containing chicken, watermelon, and lemonade on the front.">
             <dl class="container">
               <div class="container-item">
                 <dt>Colour</dt>
@@ -112,12 +115,19 @@
           <a class="button edit" href="current-item-bike.html">Edit</a>
           <a class="button delete" href="">Delete</a>
         </div>
+
         <p class="subtotal-checkout">
           <strong>Subtotal:</strong> $89.97<br/>
           <strong>Tax:</strong> $10.80<br/>
           <strong>Shipping/Handling:</strong> $5.40<br/>
           <span class="total"><strong>Total: $106.17</strong></span>
         </p>
+
+      </section>
+      <!-- // My Items -->
+
+      <!-- Personal Info (Shipping and Billing) -->
+      <section id="personal-info">
 
         <div class="grid-container more-below">
           <div class="col-1of2">
@@ -167,9 +177,12 @@
           </div>
         </div>
 
-      <a class="button submit" href="review.html">Review Order</a>
-      </section>
+        <a class="button submit" href="review.html">Review Order</a>
 
+      </section>
+      <!-- // Personal Info -->
+
+      <!-- Footer (w/ contact info and address) -->
       <footer>
         <img class="footer-image" src="img/logo-footer.png" alt="Fit To A Tee logomark, with a diagonally striped t-shirt inside a circle.">
         <div class="vcard">
@@ -180,8 +193,10 @@
           <p>Brendan Lane and Shengting Hu</p>
         </div>
       </footer>
+      <!-- // Footer -->
 
     </div>
+
     <!-- Run the scripts only at the end, after loading the page -->
     <!-- 
       HTML5shiv allows IE below version 9 to work with HTML5 elements.
@@ -189,5 +204,6 @@
     <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
     <script src="js/jquery.js"></script>
     <script src="js/mobilemenu.js"></script>
+
   </body>
 </html>

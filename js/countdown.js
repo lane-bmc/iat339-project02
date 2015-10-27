@@ -60,7 +60,7 @@
     return futureFormattedDate
   }
   $("#countdown").countdown({
-    date: "31 October 2015 23:59:59", // Change this to your desired date to countdown to
+    date: "31 October 2015 23:59:59", // Ultimately, the JS counts down to this date
     format: "on"
   });
 });
