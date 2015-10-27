@@ -24,10 +24,6 @@ $(document).ready(function () {
 $(window).resize(function () {
 	var pageWidth = $(window).width();
 
-	console.log("I'm ready!");
-	var pageWidth = $(window).width();
-	console.log("Page width is " + pageWidth);
-
 	if (pageWidth < 664) {
 		$(".nav-toggle").removeClass("hidden");
 		$(".nav-toggle").addClass("shown");
