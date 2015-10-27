@@ -711,7 +711,7 @@ dl.container {
 /* For the countdown */
 #countdown p {
   display:inline-block;
-  padding:0.5rem;
+  padding:0 0.5rem;
   background:#0DB3BC;
   color:#FFF;
   font-size:1.5rem;
