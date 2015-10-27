@@ -12,9 +12,18 @@
 body { /* Setting up the main body, and its padding from the inside contents*/
   font-family: 'Hind', Arial, Verdana, sans-serif;
   font-size:100%;
-  padding:20em 2em 2em 2em; /* Lots of top padding for the smallest view, in which the navbar comes down a lot */
   color:#777;
   background-color:#FFF;
+  padding:20em 2em 2em 2em; /* Top padding gets reduced if the menu is collapsed */
+}
+@media (max-width:42.5em) {
+  body.mobile-shown {
+    padding:20em 2em 2em 2em; /* Top padding gets reduced if the menu is collapsed */
+  }
+
+  body.mobile-hidden {
+    padding:8em 2em 2em 2em; /* Top padding gets reduced if the menu is collapsed */
+  }
 }
 
 @media (min-width:42.51em) {
@@ -491,6 +500,25 @@ nav.fixed-nav-bar { /* The top navigation bar */
   z-index:1;
 }
 
+a.nav-toggle.hidden {
+  visibility: hidden;
+  position: absolute; 
+}
+
+a.nav-toggle.shown {
+  visibility: visible;
+  position: relative;
+}
+
+a.nav-toggle {
+  display:block;
+  text-align:right;
+  padding-right:1em;
+  padding-top:1.5em;
+  font-weight:bold;
+  z-index:-1;
+}
+
 @media (min-width:56.25em) {
   nav.fixed-nav-bar {
     position:fixed; /* When the screen is big enough, lock the navbar to the top of the window */
@@ -552,6 +580,11 @@ nav ul li {
   nav ul li:last-of-type {
     border-bottom-style:none;
     padding:0.5em 0 0 0;
+  }
+
+  .img-navbar {
+    margin-left:1em;
+    float:left;
   }
 }
 
