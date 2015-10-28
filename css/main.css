@@ -254,13 +254,6 @@ span.listitem { /* Since both lists employ color attributes to change bullet/num
   color:#777;
 }
 
-.hidden {
-  visibility: hidden;
-}
-
-.shown {
-  visibility: visible;
-}
 
 /* 
   COMBINED ELEMENTS -------------------
@@ -338,7 +331,7 @@ p.product-price, p.product-date { /* The paragraph that holds the product's pric
 
 /*Grid System*/
 
-.grid-container:after {
+.grid-container:after { /* Clears the floats after a grid row */
   content: "";
   display: table;
   clear: both;
