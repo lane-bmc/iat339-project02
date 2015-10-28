@@ -617,17 +617,17 @@
             <p>#countdown</p>
 
             <h4>Sample code:</h4>
-            <code>&lt;div id="countdown"&gt;<br/>
+            <code>&lt;div id="countdown" class="hidden"&gt;<br/>
               <span class="indent">&lt;p class="days"&gt;00&lt;/p&gt;&lt;p class="timeRefDays"&gt;days&lt;/p&gt;&lt;p class="hours"&gt;00&lt;/p&gt;&lt;p class="timeRefHours"&gt;hours&lt;/p&gt;&lt;p class="minutes"&gt;00&lt;/p&gt;&lt;p class="timeRefMinutes"&gt;minutes&lt;/p&gt;&lt;p class="seconds"&gt;00&lt;/p&gt;&lt;p class="timeRefSeconds"&gt;seconds&lt;/p&gt;</span><br/>
             &lt;/div&gt;</code>
 
             <h4>Rendered element:</h4>
-            <div id="countdown">
+            <div id="countdown" class="hidden">
               <p class="days">00</p><p class="timeRefDays">days</p><p class="hours">00</p><p class="timeRefHours">hours</p><p class="minutes">00</p><p class="timeRefMinutes">minutes</p><p class="seconds">00</p><p class="timeRefSeconds">seconds</p>
             </div>
 
             <h4>Note on code:</h4>
-            <p>This element uses JavaScript. On fallback, everything reverts to zeroes.</p>
+            <p>This element uses JavaScript. On fallback, the entire countdown DIV disappears.</p>
 
         </section>
 
@@ -657,6 +657,37 @@
               <p>The medium doesn't fit great, a bit baggy overall. Would like a more fitted cut.</p>
             </article>
 
+        </section>
+
+        <section>
+          <h3>Footer</h3>
+
+            <h4>CSS selector:</h4>
+            <p>footer</p>
+
+            <h4>Sample code:</h4>
+            <code>&lt;footer&gt;<br/>
+              <span class="indent">&lt;img class="footer-image" src="img/logo-footer.png" alt="Fit To A Tee logomark, with a diagonally striped t-shirt inside a circle."&gt;<span></br>
+              <span class="indent">&lt;div class="vcard"&gt;<span></br>
+                <span class="indent-2">&lt;p&gt; &lt;span class="fn"&gt;&lt;strong&gt;&copy;2015 Fit To A Tee&lt;/strong&gt;&lt;/span&gt;&lt;br/&gt;<span></br>
+                <span class="indent-2">&lt;span class="adr"&gt;&lt;span class="street-address"&gt;125 Main Street&lt;/span&gt;, &lt;span class="region"&gt;Vancouver, BC&lt;/span&gt;, &lt;span class="postal-code"&gt;V9W 5O8&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;<span></br>
+                <span class="indent-2">&lt;p&gt;&lt;span class="tel"&gt;(604) 271 9202&lt;/span&gt;&lt;br/&gt;<span></br>
+                <span class="indent-2">&lt;span class="email"&gt;&lt;a href="mailto:info@fittoatee.com"&gt;info@fittoatee.com&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;<span></br>
+                <span class="indent-2">&lt;p&gt;Brendan Lane and Shengting Hu&lt;/p&gt;<span></br>
+              <span class="indent">&lt;/div&gt;<span></br>
+            &lt;/footer&gt;&lt;/code&gt;</code>
+
+            <h4>Rendered element:</h4>
+            <footer>
+              <img class="footer-image" src="img/logo-footer.png" alt="Fit To A Tee logomark, with a diagonally striped t-shirt inside a circle.">
+              <div class="vcard">
+                <p> <span class="fn"><strong>&copy;2015 Fit To A Tee</strong></span><br/>
+                <span class="adr"><span class="street-address">125 Main Street</span>, <span class="region">Vancouver, BC</span>, <span class="postal-code">V9W 5O8</span></span></p>
+                <p><span class="tel">(604) 271 9202</span><br/>
+                <span class="email"><a href="mailto:info@fittoatee.com">info@fittoatee.com</a></span></p>
+                <p>Brendan Lane and Shengting Hu</p>
+              </div>
+            </footer>
         </section>
 
       </section>

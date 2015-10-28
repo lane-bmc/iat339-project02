@@ -398,12 +398,12 @@ nav.fixed-nav-bar { /* The top navigation bar */
   z-index:1;
 }
 
-a.nav-toggle.hidden {
+.hidden {
   visibility: hidden;
   position: absolute; 
 }
 
-a.nav-toggle.shown {
+.shown {
   visibility: visible;
   position: relative;
 }

@@ -4,6 +4,11 @@
 */
 
 (function (e) {
+
+  /* The Countdown is hidden by default - so if the JavaScript loads, only then do we display the countdown */
+  $("#countdown").removeClass("hidden"); 
+  $("#countdown").addClass("shown");
+
   e.fn.countdown = function (t, n) {
   function i() {
     eventDate = Date.parse(r.date) / 1e3;
