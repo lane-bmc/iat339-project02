@@ -471,7 +471,7 @@ nav ul li {
 .img-cart-view { /* Placeholder images */
   width:100%;
   height:auto;
-  background-color:none;
+  background:none;
 }
 
 .cart-item-box {
