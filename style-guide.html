@@ -32,12 +32,10 @@
       <!-- Other Pages -->
       <section id="other_pages">
         <h2 class="subheading">Other Pages</h2>
-        <section>
           <ul>
             <li><span class="listitem"><a href="citations.html">Citations</a></span></li>
             <li><span class="listitem"><a href="index.html">Site Homepage</a></span></li>
           </ul>
-        </section>
       </section>
       <!-- // Other Pages -->
 
@@ -256,15 +254,15 @@
               </code>
 
             <h4>Rendered element:</h4>
-            <figure>
-              <div class="product-listing">
+            <div class="product-listing">
+              <figure>
                 <img src="img/tshirt-bike.png" alt="T-shirt with a bike on the front. The bike has people standing on its seat.">
                 <figcaption class="product-info">
                   <p class="product-name">Bike T-Shirt</p>
                   <p class="product-price">$24.99</p>
                 </figcaption>
-              </div>
-            </figure>
+              </figure>
+            </div>
         </section>
 
         <!-- Grid Structure Styling Section -->
@@ -362,33 +360,35 @@
 
           <h4>Rendered element:</h4>
           <div class="grid-container">
-            <figure class="col-1of3">
-              <div class="product-listing">
+            <div class="product-listing">
+              <figure class="col-1of3">
                 <img src="img/tshirt-bike.png" alt="T-shirt with a bike on the front. The bike has people standing on its seat.">
                 <figcaption class="product-info">
                   <p class="product-name">Bike T-Shirt</p>
                   <p class="product-price">$29.99</p>
                 </figcaption>
-              </div>
-            </figure>
-            <figure class="col-1of3">
-              <div class="product-listing">
+              </figure>
+            </div>
+
+            <div class="product-listing">
+              <figure class="col-1of3">
                 <img src="img/tshirt-mountain.png" alt="T-shirt with two mountains on the front. The tall mountain is thinking about food.">
                 <figcaption class="product-info">
                   <p class="product-name">Mountain T-Shirt</p>
                   <p class="product-price">$29.99</p>
                 </figcaption>
-              </div>
-            </figure>
-            <figure class="col-1of3">
-              <div class="product-listing">
+              </figure>
+            </div>
+
+            <div class="product-listing">
+              <figure class="col-1of3">
                 <img src="img/tshirt-picnic.png" alt="T-shirt with a picnic basket containing chicken, watermelon, and lemonade on the front.">
                 <figcaption class="product-info">
                   <p class="product-name">Picnic T-Shirt</p>
                   <p class="product-price">$29.99</p>
                 </figcaption>
-              </div>
-            </figure>
+              </figure>
+            </div>
           </div>
         </section>
 
@@ -494,25 +494,31 @@
             <h4>Rendered element:</h4>
             <div class="cart-item">
               <div class="cart-item-box">
-                <img class="img-cart-view" src="http://placehold.it/160x160">
-                <dl class="container">
-                  <div class="container-item">
+                <img class="img-cart-view" src="http://placehold.it/160x160" alt="">
+                <div class="container-item"> 
+                  <dl class="container">
                     <dt>Colour</dt>
                     <dd>Red</dd>
-                  </div>
-                  <div class="container-item">
+                  </dl>
+                </div>
+                <div class="container-item">
+                  <dl class="container">
                     <dt>Size</dt>
                     <dd>XS</dd>
-                  </div>
-                  <div class="container-item">
+                  </dl>
+                </div>
+                <div class="container-item">
+                  <dl class="container">
                     <dt>Quantity</dt>
                     <dd>1</dd>
-                  </div>
-                  <div class="container-item">
+                  </dl>
+                </div>
+                <div class="container-item">
+                  <dl class="container">
                     <dt>Price</dt>
                     <dd>$29.99</dd>
-                  </div>
-                </dl>
+                  </dl>
+                </div>
               </div>
               <a class="button edit" href="">Edit</a>
               <a class="button delete" href="">Delete</a>
@@ -526,7 +532,7 @@
             <p>.product-view</p>
 
             <h4>Sample code:</h4>
-            <code>&lt;div class="product-view"&gt;</br>
+            <code>&lt;div class="product-view"&gt;<br/>
               <span class="indent">&lt;div class="placeholder-img-product-view"&gt;&lt;/div&gt;</span><br/>
               <span class="indent">&lt;h1&gt;Bike T-Shirt&lt;/h1&gt;</span><br/>
               <span class="indent">&lt;p class="product-price"&gt;$29.99&lt;/p&gt;</span><br/>
@@ -562,7 +568,7 @@
 
             <h4>Rendered element:</h4>
             <div class="product-view">
-              <img class="img-product-view" src="http://placehold.it/355x495">
+              <img class="img-product-view" src="http://placehold.it/355x495" alt="">
               <h1>Bike T-Shirt</h1>
               <p class="product-price">$29.99</p>
               <p>This fun bike t-shirt is made from a 100% bamboo tri-blend, and available in red, black, and white. It's a unisex fit and can be machine-washed and dried without any trouble.</p>
@@ -667,15 +673,15 @@
 
             <h4>Sample code:</h4>
             <code>&lt;footer&gt;<br/>
-              <span class="indent">&lt;img class="footer-image" src="img/logo-footer.png" alt="Fit To A Tee logomark, with a diagonally striped t-shirt inside a circle."&gt;<span></br>
-              <span class="indent">&lt;div class="vcard"&gt;<span></br>
-                <span class="indent-2">&lt;p&gt; &lt;span class="fn"&gt;&lt;strong&gt;&copy;2015 Fit To A Tee&lt;/strong&gt;&lt;/span&gt;&lt;br/&gt;<span></br>
-                <span class="indent-2">&lt;span class="adr"&gt;&lt;span class="street-address"&gt;125 Main Street&lt;/span&gt;, &lt;span class="region"&gt;Vancouver, BC&lt;/span&gt;, &lt;span class="postal-code"&gt;V9W 5O8&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;<span></br>
-                <span class="indent-2">&lt;p&gt;&lt;span class="tel"&gt;(604) 271 9202&lt;/span&gt;&lt;br/&gt;<span></br>
-                <span class="indent-2">&lt;span class="email"&gt;&lt;a href="mailto:info@fittoatee.com"&gt;info@fittoatee.com&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;<span></br>
-                <span class="indent-2">&lt;p&gt;Brendan Lane and Shengting Hu&lt;/p&gt;<span></br>
-              <span class="indent">&lt;/div&gt;<span></br>
-            &lt;/footer&gt;&lt;/code&gt;</code>
+              <span class="indent">&lt;img class="footer-image" src="img/logo-footer.png" alt="Fit To A Tee logomark, with a diagonally striped t-shirt inside a circle."&gt;</span><br/>
+              <span class="indent">&lt;div class="vcard"&gt;</span><br/>
+                <span class="indent-2">&lt;p&gt; &lt;span class="fn"&gt;&lt;strong&gt;&copy;2015 Fit To A Tee&lt;/strong&gt;&lt;/span&gt;&lt;br/&gt;<span><br/>
+                <span class="indent-2">&lt;span class="adr"&gt;&lt;span class="street-address"&gt;125 Main Street&lt;/span&gt;, &lt;span class="region"&gt;Vancouver, BC&lt;/span&gt;, &lt;span class="postal-code"&gt;V9W 5O8&lt;/span&gt;&lt;/span&gt;&lt;/p&gt;</span><br/>
+                <span class="indent-2">&lt;p&gt;&lt;span class="tel"&gt;(604) 271 9202&lt;/span&gt;&lt;br/&gt;<span><br/>
+                <span class="indent-2">&lt;span class="email"&gt;&lt;a href="mailto:info@fittoatee.com"&gt;info@fittoatee.com&lt;/a&gt;&lt;/span&gt;&lt;/p&gt;</span><br/>
+                <span class="indent-2">&lt;p&gt;Brendan Lane and Shengting Hu&lt;/p&gt;</span><br/>
+              <span class="indent">&lt;/div&gt;</span><br/>
+              &lt;/footer&gt; </code>
 
             <h4>Rendered element:</h4>
             <footer>
