@@ -320,7 +320,6 @@ p.product-price, p.product-date { /* The paragraph that holds the product's pric
 
 .product-listing:hover .product-info, .product-listing:focus .product-info { /* Setting the info box to change color on hover/focus */
   border-top-style:solid;
-  border-top-color: #EFA867;
   border-top-width: 0.1em;
   background-color: #EFA867;
 }
