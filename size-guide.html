@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fit to a Tee</title>
+
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700|Hind:400,600' rel='stylesheet' type='text/css'>
+    <link href="css/main.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div class="wrapper"> <!-- // DIV that wraps around the whole document -->
+
+      <!-- // NAVIGATION -->
+      <nav class="fixed-nav-bar">
+        <a href="index.html"><img class="img-navbar" src="img/logo-navbar.png" alt="Fit to a Tee logo."></a>
+        <a class="nav-toggle hidden" href="#">MENU</a>
+        <ul class="nav-mobile-hidden">
+          <li><a class="button navlink" href="current-styles.html">Current Styles</a></li><li><a class="button navlink" href="discontinued-styles.html">Discontinued Styles</a></li><li><a class="button navlink" href="about.html">About</a></li><li><a class="button navlink checkout" href="checkout.html">Checkout (3)</a></li>
+        </ul>
+      </nav>
+      <!-- NAVIGATION // -->
+
+      <!-- About the size guide -->
+      <section id="size-guide">
+        <h1>Size Guide</h1>
+        <p class="subheading">It would be a travesty if you weren't able to order the right size shirt. So, to make things a little easier for you, here's a handy sizing chart, so you can figure out which size will fit you best!</p>
+
+        <!-- Size Chart -->
+        <h2 class="subheading">Sizing Chart</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Size</th>
+              <th>Chest</th>
+              <th>Waist</th>
+              <th>Hip</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>XS</td>
+              <td>31-33"</td>
+              <td>27-29"</td>
+              <td>32-34"</td>
+            </tr>
+            <tr>
+              <td>S</td>
+              <td>34-37"</td>
+              <td>30-32"</td>
+              <td>35-37"</td>
+            </tr>
+            <tr>
+              <td>M</td>
+              <td>37-40"</td>
+              <td>32-35"</td>
+              <td>37-40"</td>
+            </tr>
+            <tr>
+              <td>L</td>
+              <td>40-44"</td>
+              <td>35-39"</td>
+              <td>40-44"</td>
+            </tr>
+            <tr>
+              <td>XL</td>
+              <td>44-48"</td>
+              <td>39-43"</td>
+              <td>44-48"</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- // Size Chart -->
+
+        <h2 class="subheading">Measuring Your Fit</h2>
+
+        <div class="grid-container">
+          <div class="col-2of3">
+            <p>To measure your clothing size, simply do the following:</p>
+            <ul>
+              <li><span class="listitem"><strong>CHEST</strong><br/>
+                Run a flexible tape measure across the fullest area of your chest, holding the tape measure horizontally.</span></li>
+              <li><span class="listitem"><strong>WAIST</strong><br/>
+                Run a flexible tape measure around the narrowest part of your waist, keeping the tape horizontal.</span></li>
+              <li><span class="listitem"><strong>HIP</strong><br/>
+                Stand with your feet together and measure around the fullest point of the hip, keeping the tape measure horizontal.</span></li>
+            </ul>
+          </div>
+          <div class="col-1of3">
+            <img class="img-size-guide" src="img/tshirt-size-guide.png" alt="T-shirt diagram with the chest, waist, and hips labelled, in corresponding to the measurements used to determine shirt fit.">
+          </div>
+        </div>
+
+        <h2 class="subheading">Picking The Right Size</h2>
+
+        <p>So picking the right size is a pretty simple process. But what if you're stuck in between two sizes?</p> 
+        <p>The choice really is yours. Do you like a tight fit? <strong>Go for the smaller size</strong>. Prefer a baggier cut? <strong>Go for the larger size</strong>. Do your chest and waist measurements result in two different suggested sizes? <strong>Order the size from your chest measurement</strong>.</p>
+        <p>Happy shopping!</p>        
+
+      </section>
+
+      <!-- Footer (w/ contact info and address) -->
+      <footer>
+        <img class="footer-image" src="img/logo-footer.png" alt="Fit To A Tee logomark, with a diagonally striped t-shirt inside a circle.">
+        <div class="vcard">
+          <p> <span class="fn"><strong>&copy;2015 Fit To A Tee</strong></span><br/>
+          <span class="adr"><span class="street-address">125 Main Street</span>, <span class="region">Vancouver, BC</span>, <span class="postal-code">V9W 5O8</span></span></p>
+          <p><span class="tel">(604) 271 9202</span><br/>
+          <span class="email"><a href="mailto:info@fittoatee.com">info@fittoatee.com</a></span></p>
+          <p>Brendan Lane and Shengting Hu</p>
+        </div>
+      </footer>
+      <!-- // Footer -->
+
+    </div>
+
+    <!-- Run the scripts only at the end, after loading the page -->
+    <!-- 
+      HTML5shiv allows IE below version 9 to work with HTML5 elements.
+    -->
+    <!--[if lt IE 9]><script src="js/html5shiv.js"></script><![endif]-->
+    <script src="js/jquery.js"></script>
+    <script src="js/mobilemenu.js"></script>
+
+  </body>
+</html>

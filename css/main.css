@@ -564,12 +564,15 @@ dl.container {
 /* Hook class for the countdown */
 #countdown p {
   display:inline-block;
-  padding:0 0.5rem;
-  background:#0DB3BC;
-  color:#FFF;
-  font-size:1.5rem;
+  padding:0 0.25em;
+  color:#0DB3BC;
+  font-size:1.5em;
   font-weight:bold;
   margin:0;
+}
+
+#countdown p:first-of-type {
+  padding-left:0;
 }
 
 
@@ -630,7 +633,7 @@ footer p {
 }
 
 /* Image and title classes for team profiles */
-.img-team {
+.img-team, .img-size-guide {
   max-width:100%;
 }
 
@@ -653,6 +656,28 @@ article h3 { /* The name of the reviewer */
 .updates-date { /* Styling for the dates in each update post on the company update page */
   font-weight:bold;
   margin-top:-1.5em;
+}
+
+/* Sizing Chart Table */
+
+table {
+  width:100%;
+}
+
+td, th {
+  width:25%;
+  border:0.1em solid #CCC;
+  text-align:center;
+  font-size:1em;
+}
+
+th {
+  background-color:#0DB3BC;
+  color:#FFF;
+}
+
+td:first-of-type {
+  font-weight:bold;
 }
 
 
@@ -816,5 +841,9 @@ article h3 { /* The name of the reviewer */
   nav ul { /* Send the navigation to the right when the screen increases in size */
     display:block;
     text-align:right;
+  }
+
+  td, th {
+    font-size:1.25em;
   }
 }
